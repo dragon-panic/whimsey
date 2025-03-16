@@ -1,0 +1,67 @@
+// Sprite sheet dimensions
+$card-width: 122px;
+$card-height: 208px;
+$cards-per-row: 13;
+
+// Calculate row positions
+$row-major: 0;        // Major Arcana row 1
+$row-major2: $card-height;    // Major Arcana row 2
+$row-wands: $card-height * 2;
+$row-cups: $card-height * 3;
+$row-swords: $card-height * 4;
+$row-pentacles: $card-height * 5;
+
+// Base card class
+.tarot-card {
+  width: $card-width;
+  height: $card-height;
+  background-image: url('/tarot-cards.jpg');
+  background-repeat: no-repeat;
+}
+
+// Function to calculate x position
+@function get-x-position($card-index) {
+  @return $card-width * $card-index * -1;
+}
+
+// Mixin for card position
+@mixin card-position($x-index, $row) {
+  background-position: get-x-position($x-index) $row;
+}
+
+// Major Arcana - First Row
+@for $i from 0 through 12 {
+  .card-#{nth((fool magician high-priestess empress emperor hierophant lovers chariot strength hermit wheel-of-fortune justice hanged-man), $i + 1)} {
+    @include card-position($i, $row-major);
+  }
+}
+
+// Major Arcana - Second Row
+@for $i from 0 through 8 {
+  .card-#{nth((death temperance devil tower star moon sun judgement world), $i + 1)} {
+    @include card-position($i, $row-major2);
+  }
+}
+
+// Generate suit cards
+@each $suit in (wands, cups, swords, pentacles) {
+  $row: if($suit == wands, $row-wands,
+         if($suit == cups, $row-cups,
+         if($suit == swords, $row-swords,
+         $row-pentacles)));
+
+  // Generate number cards (ace through 10)
+  @for $i from 1 through 10 {
+    $name: if($i == 1, ace, $i);
+    .card-#{$name}-of-#{$suit} {
+      @include card-position($i - 1, $row);
+    }
+  }
+
+  // Generate court cards
+  @each $court, $index in (page: 10, knight: 11, queen: 12) {
+    .card-#{$court}-of-#{$suit} {
+      @include card-position($index, $row);
+    }
+  }
+} 

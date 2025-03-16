@@ -1,0 +1,69 @@
+// Sprite sheet dimensions
+$card-width: 122px;
+$card-height: 208px;
+$cards-per-row: 13;
+
+// Base card class
+.tarot-card-container {
+  width: calc($card-width * 1.5);
+  height: calc($card-height * 1.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarot-card {
+  width: $card-width;
+  height: $card-height;
+  background-image: url('/tarot-cards.jpg');
+  background-repeat: no-repeat;
+  transform: scale(1.5);
+  transform-origin: center;
+}
+
+// Function to calculate position from index
+@function get-sprite-position($index) {
+  $row: floor($index / $cards-per-row);
+  $col: $index % $cards-per-row;
+  @return (-$col * $card-width) (-$row * $card-height);
+}
+
+// Major Arcana (0-21)
+$major-arcana: (
+  fool: 0, magician: 1, high-priestess: 2, empress: 3, emperor: 4,
+  hierophant: 5, lovers: 6, chariot: 7, strength: 8, hermit: 9,
+  wheel-of-fortune: 10, justice: 11, hanged-man: 12, death: 13,
+  temperance: 14, devil: 15, tower: 16, star: 17, moon: 18,
+  sun: 19, judgement: 20, world: 21
+);
+
+@each $name, $index in $major-arcana {
+  .card-#{$name} {
+    background-position: get-sprite-position($index);
+  }
+}
+
+// Generate suit cards (starting at index 22)
+@each $suit, $start-index in (wands: 22, cups: 36, swords: 50, pentacles: 64) {
+  // Number cards (1-10)
+  @for $i from 1 through 10 {
+    $name: if($i == 1, ace, $i);
+    .card-#{$name}-of-#{$suit} {
+      background-position: get-sprite-position($start-index + $i - 1);
+    }
+  }
+
+  // Court cards
+  .card-page-of-#{$suit} {
+    background-position: get-sprite-position($start-index + 10);
+  }
+  .card-knight-of-#{$suit} {
+    background-position: get-sprite-position($start-index + 11);
+  }
+  .card-queen-of-#{$suit} {
+    background-position: get-sprite-position($start-index + 12);
+  }
+  .card-king-of-#{$suit} {
+    background-position: get-sprite-position($start-index + 13);
+  }
+} 
