@@ -15,7 +15,7 @@ $row-pentacles: $card-height * 5;
 .tarot-card {
   width: $card-width;
   height: $card-height;
-  background-image: url('/tarot-cards.jpg');
+  background-image: url('../public/tarot-cards.jpg');
   background-repeat: no-repeat;
 }
 

@@ -1,7 +1,7 @@
 .tarot-card {
   width: 122px;
   height: 208px;
-  background-image: url('/tarot-cards.jpg');
+  background-image: url('../public/tarot-cards.jpg');
   background-repeat: no-repeat;
 }
 

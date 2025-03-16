@@ -15,7 +15,7 @@ $cards-per-row: 13;
 .tarot-card {
   width: $card-width;
   height: $card-height;
-  background-image: url('/tarot-cards.jpg');
+  background-image: url('../public/tarot-cards.jpg');
   background-repeat: no-repeat;
   transform: scale(1.5);
   transform-origin: center;
