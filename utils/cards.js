@@ -107,4 +107,50 @@ export const jungianMeanings = {
   '8 of Pentacles': 'Represents the disciplined work of crafting one\'s individual path of individuation.',
   '9 of Pentacles': 'Symbolizes the achievement of psychological independence and self-reliance.',
   '10 of Pentacles': 'Represents the manifestation of the Self and the achievement of psychological wholeness in the material world.'
+};
+
+export const integralMeanings = {
+  // Wands
+  '2 of Wands': 'From an integral perspective, this card represents the emergence of individual agency (Upper-Left) seeking expression in the world (Upper-Right), while navigating cultural expectations (Lower-Left) and systemic opportunities (Lower-Right). The tension between personal vision and collective possibilities invites integral development.',
+  '3 of Wands': 'This card embodies the integration of personal vision (UL) with concrete action (UR), supported by cultural networks (LL) and systemic resources (LR). It represents the successful alignment of all four quadrants in service of expansion and growth.',
+  '4 of Wands': 'Represents the harmonious integration of personal achievement (UL/UR) with collective celebration (LL/LR). Shows how individual accomplishments can create stable platforms for communal joy and shared progress across all quadrants.',
+  '5 of Wands': 'Illustrates necessary conflicts between different levels of development and perspectives (all quadrants), driving evolution through the healthy competition of ideas, methods, and systems. This tension catalyzes vertical development.',
+  '6 of Wands': 'Shows the alignment of personal achievement (UL) with external recognition (UR), cultural validation (LL), and systemic success (LR). Represents victory that honors all quadrants and developmental levels.',
+  '7 of Wands': 'Depicts the courage to maintain an integral perspective while facing resistance from partial or fragmented viewpoints. Standing firm in truth while honoring the developmental stages of others.',
+  '8 of Wands': 'Represents rapid integral development across all quadrants - swift inner growth (UL), quick action (UR), fast cultural evolution (LL), and rapid systemic change (LR). Movement toward higher stages of consciousness.',
+  '9 of Wands': 'Shows the resilience needed to maintain integral awareness through challenges. Protecting higher developmental gains while remaining open to further evolution across all quadrants.',
+  '10 of Wands': 'Illustrates the weight of integral responsibility - the burden of seeing and holding multiple perspectives (UL), maintaining practice (UR), honoring culture (LL), and managing systems (LR).',
+
+  // Cups
+  '2 of Cups': 'Represents the integration of masculine and feminine energies within (UL) and between individuals (LL), manifesting in harmonious relationships (UR) and supportive structures (LR).',
+  '3 of Cups': 'Shows the joy of integral community - shared inner growth (UL), collective celebration (UR), cultural resonance (LL), and supportive systems (LR) all dancing together.',
+  '4 of Cups': 'Reflects the need to reassess from an integral perspective - examining personal truth (UL), behaviors (UR), cultural conditioning (LL), and systemic patterns (LR).',
+  '5 of Cups': 'Represents necessary losses in the integral journey - letting go of partial perspectives and limited frameworks across all quadrants to allow for more comprehensive understanding.',
+  '6 of Cups': 'Shows the integral appreciation of all developmental stages, honoring the innocence and wisdom of each level while maintaining space for growth.',
+  '7 of Cups': 'Illustrates the challenge of discernment in integral development - distinguishing authentic growth from spiritual bypassing and pseudo-transformation.',
+  '8 of Cups': 'Depicts the courage to leave behind partial truths and limited frameworks in search of more integral understanding and development.',
+  '9 of Cups': 'Represents emotional fulfillment through integral development - happiness that encompasses personal growth, authentic expression, cultural connection, and systemic harmony.',
+  '10 of Cups': 'Shows the achievement of integral emotional wholeness - lasting joy that embraces all quadrants and developmental stages in harmonious relationship.',
+
+  // Swords
+  '2 of Swords': 'Represents the tension between competing truth claims and the need for integral discernment that honors partial truths while seeking higher synthesis.',
+  '3 of Swords': 'Shows the necessary pain of outgrowing limited perspectives and frameworks - the heartbreak that often accompanies expansion into more integral views.',
+  '4 of Swords': 'Illustrates the importance of contemplative practice in integral development - the rest needed to integrate insights across all quadrants.',
+  '5 of Swords': 'Depicts the pitfalls of intellectual arrogance - the importance of holding even integral perspectives lightly and with humility.',
+  '6 of Swords': 'Shows the journey toward more integral perspectives - moving from partial, fragmented views to more comprehensive understanding.',
+  '7 of Swords': 'Represents the strategic discernment needed in integral practice - knowing when to challenge limited perspectives and when to meet systems where they are.',
+  '8 of Swords': 'Illustrates self-imposed limitations from failing to take an integral view - the restrictions that come from honoring only certain quadrants or levels.',
+  '9 of Swords': 'Shows the anxiety that can come from seeing multiple perspectives and potentials - the challenge of holding integral awareness with grace.',
+  '10 of Swords': 'Represents the death of partial perspectives and limited frameworks - the painful but necessary end of fragmented understanding.',
+
+  // Pentacles
+  '2 of Pentacles': 'Shows the dynamic balance needed to maintain integral practice in the material world - juggling inner development with outer responsibilities.',
+  '3 of Pentacles': 'Represents the collaboration of different perspectives and skills in service of integral projects - bringing together diverse quadrants and levels.',
+  '4 of Pentacles': 'Illustrates the need to balance material stability with continued growth - avoiding the trap of stagnation at any level of development.',
+  '5 of Pentacles': 'Shows the material challenges that can accompany integral development - the temporary hardships of growing beyond conventional frameworks.',
+  '6 of Pentacles': 'Represents the balanced exchange of resources across all quadrants - giving and receiving in ways that support integral development.',
+  '7 of Pentacles': 'Illustrates the patient assessment of integral development - evaluating growth and progress across all quadrants and levels.',
+  '8 of Pentacles': 'Shows the dedicated practice needed for integral mastery - the careful refinement of skills and understanding across all domains.',
+  '9 of Pentacles': 'Represents the material abundance that can flow from integral development - success that honors all quadrants and levels.',
+  '10 of Pentacles': 'Shows the establishment of lasting integral frameworks - creating systems and structures that support development across all quadrants and levels.'
 }; 

@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { getDecan } from '../utils/calculations';
 import { zodiacSymbols, planetSymbols, zodiacDescriptions, planetDescriptions, zodiacElements, elements } from '../utils/astrology';
 import { decans } from '../utils/decans';
-import { cardTitles, suitDescriptions, numberMeanings, jungianMeanings } from '../utils/cards';
+import { cardTitles, suitDescriptions, numberMeanings, jungianMeanings, integralMeanings } from '../utils/cards';
 import styles from './tarot-sprites.module.scss';
 
 export default function Home() {
@@ -256,6 +256,13 @@ export default function Home() {
                     <p className="text-sm uppercase tracking-wider opacity-70">Jungian Interpretation</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug">
                       {jungianMeanings[selectedDecan.card]}
+                    </p>
+                  </div>
+
+                  <div className="info-box rounded-xl p-6 text-left">
+                    <p className="text-sm uppercase tracking-wider opacity-70">Integral Interpretation</p>
+                    <p className="text-sm mt-2 opacity-80 leading-snug">
+                      {integralMeanings[selectedDecan.card]}
                     </p>
                   </div>
                 </div>
