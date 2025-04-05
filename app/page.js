@@ -1,10 +1,10 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { getDecan } from '../utils/tarotCalculations';
+import { getDecan } from '../utils/calculations';
 import { zodiacSymbols, planetSymbols, zodiacDescriptions, planetDescriptions, zodiacElements, elements } from '../utils/astrology';
 import { decans } from '../utils/decans';
-import { cardTitles, suitDescriptions, numberMeanings } from '../utils/cardTitles';
+import { cardTitles, suitDescriptions, numberMeanings } from '../utils/cards';
 import styles from './tarot-sprites.module.scss';
 
 export default function Home() {
