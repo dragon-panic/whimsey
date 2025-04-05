@@ -66,9 +66,21 @@ export const zodiacElements = {
   'Pisces': { element: 'Water', suit: 'Cups' }
 };
 
-export const elementGroups = {
-  'Fire': ['Aries', 'Leo', 'Sagittarius'],
-  'Earth': ['Taurus', 'Virgo', 'Capricorn'],
-  'Air': ['Gemini', 'Libra', 'Aquarius'],
-  'Water': ['Cancer', 'Scorpio', 'Pisces']
+export const elements = {
+  'Fire': {
+    signs: ['Aries', 'Leo', 'Sagittarius'],
+    description: 'Energy, passion, and creativity'
+  },
+  'Earth': {
+    signs: ['Taurus', 'Virgo', 'Capricorn'],
+    description: 'Stability, practicality, and material world'
+  },
+  'Air': {
+    signs: ['Gemini', 'Libra', 'Aquarius'],
+    description: 'Intellect, communication, and ideas'
+  },
+  'Water': {
+    signs: ['Cancer', 'Scorpio', 'Pisces'],
+    description: 'Emotions, intuition, and relationships'
+  }
 }; 

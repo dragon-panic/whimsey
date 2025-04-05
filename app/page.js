@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { getDecan } from '../utils/tarotCalculations';
-import { zodiacSymbols, planetSymbols, zodiacDescriptions, planetDescriptions, zodiacElements, elementGroups } from '../utils/astrology';
+import { zodiacSymbols, planetSymbols, zodiacDescriptions, planetDescriptions, zodiacElements, elements } from '../utils/astrology';
 import { decans } from '../utils/decans';
 import { cardTitles, suitDescriptions, numberMeanings } from '../utils/cardTitles';
 import styles from './tarot-sprites.module.scss';
@@ -27,7 +27,6 @@ export default function Home() {
       headerBg: 'bg-red-100',
       textColor: 'text-red-800',
       icon: '🔥',
-      description: 'Energy, passion, and creativity',
       selectedBg: 'bg-red-500',
       hoverBg: 'hover:bg-red-100/20',
       ringColor: 'ring-red-400',
@@ -38,7 +37,6 @@ export default function Home() {
       headerBg: 'bg-green-100',
       textColor: 'text-green-800',
       icon: '🌱',
-      description: 'Stability, practicality, and material world',
       selectedBg: 'bg-green-500',
       hoverBg: 'hover:bg-green-100/20',
       ringColor: 'ring-green-400',
@@ -49,7 +47,6 @@ export default function Home() {
       headerBg: 'bg-yellow-100',
       textColor: 'text-yellow-800',
       icon: '💨',
-      description: 'Intellect, communication, and ideas',
       selectedBg: 'bg-yellow-500',
       hoverBg: 'hover:bg-yellow-100/20',
       ringColor: 'ring-yellow-400',
@@ -60,7 +57,6 @@ export default function Home() {
       headerBg: 'bg-blue-100',
       textColor: 'text-blue-800',
       icon: '💧',
-      description: 'Emotions, intuition, and relationships',
       selectedBg: 'bg-blue-500',
       hoverBg: 'hover:bg-blue-100/20',
       ringColor: 'ring-blue-400',
@@ -169,7 +165,7 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {Object.entries(elementGroups).map(([element, signs]) => (
+            {Object.entries(elements).map(([element, data]) => (
               <div 
                 key={element} 
                 className={`border-2 ${elementStyles[element].borderColor} rounded-lg p-4 shadow-md transition-all hover:shadow-lg`}
@@ -181,14 +177,14 @@ export default function Home() {
                     <span>{elementStyles[element].icon}</span>
                   </h2>
                   <p className={`text-sm ${elementStyles[element].textColor} opacity-80 font-medium`}>
-                    Suit: {signs[0] ? zodiacElements[signs[0]].suit : ''}
+                    Suit: {data.signs[0] ? zodiacElements[data.signs[0]].suit : ''}
                   </p>
                   <p className={`text-xs ${elementStyles[element].textColor} mt-1 opacity-70`}>
-                    {elementStyles[element].description}
+                    {data.description}
                   </p>
                 </div>
                 <div className="space-y-6 mt-6">
-                  {signs.map(sign => (
+                  {data.signs.map(sign => (
                     <div key={sign} className="flex flex-col items-center">
                       <div className="flex items-center gap-2 mb-4">
                         <span className="symbol text-2xl" title={sign}>
