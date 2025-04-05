@@ -61,4 +61,50 @@ export const cardTitles = {
   '8 of Pentacles': { title: 'Lord of Prudence', description: 'Skill development, dedication, and the careful attention to detail in your work.' },
   '9 of Pentacles': { title: 'Lord of Material Gain', description: 'Independence, luxury, and the fruits of disciplined effort and refinement.' },
   '10 of Pentacles': { title: 'Lord of Wealth', description: 'Legacy, inheritance, and the establishment of lasting material abundance.' }
+};
+
+export const jungianMeanings = {
+  // Wands
+  '2 of Wands': 'Represents the tension between safety and adventure, the first step in individuation where one must choose between the familiar and the unknown.',
+  '3 of Wands': 'Symbolizes the expansion of consciousness through active engagement with the world, representing the ego\'s growing awareness of its potential.',
+  '4 of Wands': 'Reflects the establishment of a stable ego structure, celebrating the foundation needed for further psychological growth.',
+  '5 of Wands': 'Represents the inner conflicts and competing aspects of the psyche that must be integrated for personal growth.',
+  '6 of Wands': 'Symbolizes the triumph of the conscious mind in achieving recognition and validating the self\'s journey.',
+  '7 of Wands': 'Represents the courage to maintain one\'s individual path despite opposition from collective forces.',
+  '8 of Wands': 'Symbolizes the swift movement of psychic energy when barriers between conscious and unconscious are temporarily lifted.',
+  '9 of Wands': 'Reflects the defensive structures built by the ego after experiencing challenges, showing both protection and potential limitation.',
+  '10 of Wands': 'Represents the burden of consciousness and responsibility that comes with greater psychological awareness.',
+
+  // Cups
+  '2 of Cups': 'Symbolizes the initial recognition of the anima/animus, the first step in understanding the soul\'s need for emotional connection.',
+  '3 of Cups': 'Represents the celebration of emotional wholeness and the integration of different aspects of the psyche.',
+  '4 of Cups': 'Reflects a state of emotional stagnation where the psyche needs to recognize new possibilities for growth.',
+  '5 of Cups': 'Symbolizes the necessary experience of loss and grief in the process of psychological transformation.',
+  '6 of Cups': 'Represents reconnection with the inner child and the pure, unconditioned aspects of the psyche.',
+  '7 of Cups': 'Symbolizes the encounter with the shadow self through illusions and projections of the unconscious.',
+  '8 of Cups': 'Represents the courage to abandon old emotional patterns in search of deeper psychological truth.',
+  '9 of Cups': 'Reflects the state of emotional fulfillment that comes from successful integration of conscious and unconscious elements.',
+  '10 of Cups': 'Symbolizes the achievement of psychological wholeness and emotional completion.',
+
+  // Swords
+  '2 of Swords': 'Represents the mind\'s attempt to maintain balance through denial or avoidance of psychological conflict.',
+  '3 of Swords': 'Symbolizes the necessary pain of becoming conscious of repressed emotional truths.',
+  '4 of Swords': 'Reflects the need for psychological retreat and integration of difficult realizations.',
+  '5 of Swords': 'Represents the inner conflicts and power struggles within the psyche.',
+  '6 of Swords': 'Symbolizes the journey of transitioning from one state of consciousness to another.',
+  '7 of Swords': 'Represents the trickster archetype and the ways we deceive ourselves.',
+  '8 of Swords': 'Reflects self-imposed limitations and the fear of facing one\'s own shadow.',
+  '9 of Swords': 'Symbolizes the night sea journey through the unconscious and confrontation with deep fears.',
+  '10 of Swords': 'Represents the death of old thought patterns and the potential for psychological rebirth.',
+
+  // Pentacles
+  '2 of Pentacles': 'Represents the dynamic balance needed between material and spiritual aspects of life in the individuation process.',
+  '3 of Pentacles': 'Symbolizes the integration of different aspects of the self into meaningful work.',
+  '4 of Pentacles': 'Reflects the ego\'s attempt to maintain control and security, sometimes at the cost of growth.',
+  '5 of Pentacles': 'Represents the experience of material or spiritual poverty that often precedes transformation.',
+  '6 of Pentacles': 'Symbolizes the exchange between different aspects of the psyche, giving and receiving in balance.',
+  '7 of Pentacles': 'Reflects the patience required in the process of psychological growth and transformation.',
+  '8 of Pentacles': 'Represents the disciplined work of crafting one\'s individual path of individuation.',
+  '9 of Pentacles': 'Symbolizes the achievement of psychological independence and self-reliance.',
+  '10 of Pentacles': 'Represents the manifestation of the Self and the achievement of psychological wholeness in the material world.'
 }; 
