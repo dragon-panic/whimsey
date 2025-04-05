@@ -262,26 +262,6 @@ export default function Home() {
 
                 <div className="text-left space-y-6">
                   <div className="info-box rounded-xl p-6">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Number Significance</p>
-                    <p className="text-xl font-medium flex items-center gap-3 mt-1">
-                      {selectedDecan.card.split(' ')[0]}
-                    </p>
-                    <p className="text-sm mt-2 opacity-80 leading-snug">
-                      {numberMeanings[selectedDecan.card.split(' ')[0]]}
-                    </p>
-                  </div>
-
-                  <div className="info-box rounded-xl p-6">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Suit Element</p>
-                    <p className="text-xl font-medium flex items-center gap-3 mt-1">
-                      {selectedDecan.card.split(' ').slice(-1)[0]}
-                    </p>
-                    <p className="text-sm mt-2 opacity-80 leading-snug">
-                      {suitDescriptions[selectedDecan.card.split(' ').slice(-1)[0]]}
-                    </p>
-                  </div>
-
-                  <div className="info-box rounded-xl p-6">
                     <p className="text-sm uppercase tracking-wider opacity-70">Zodiac Sign</p>
                     <p className="text-xl font-medium flex items-center gap-3 mt-1">
                       <span className="symbol text-3xl" title={selectedDecan.sign}>
@@ -304,6 +284,26 @@ export default function Home() {
                     </p>
                     <p className="text-sm mt-2 opacity-80 leading-snug">
                       {planetDescriptions[rulingPlanet]}
+                    </p>
+                  </div>
+
+                  <div className="info-box rounded-xl p-6">
+                    <p className="text-sm uppercase tracking-wider opacity-70">Number Significance</p>
+                    <p className="text-xl font-medium flex items-center gap-3 mt-1">
+                      {selectedDecan.card.split(' ')[0]}
+                    </p>
+                    <p className="text-sm mt-2 opacity-80 leading-snug">
+                      {numberMeanings[selectedDecan.card.split(' ')[0]]}
+                    </p>
+                  </div>
+
+                  <div className="info-box rounded-xl p-6">
+                    <p className="text-sm uppercase tracking-wider opacity-70">Suit Element</p>
+                    <p className="text-xl font-medium flex items-center gap-3 mt-1">
+                      {selectedDecan.card.split(' ').slice(-1)[0]}
+                    </p>
+                    <p className="text-sm mt-2 opacity-80 leading-snug">
+                      {suitDescriptions[selectedDecan.card.split(' ').slice(-1)[0]]}
                     </p>
                   </div>
                 </div>
