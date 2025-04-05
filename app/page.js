@@ -2,9 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { getDecan } from '../utils/tarotCalculations';
-import { zodiacSymbols, planetSymbols } from '../utils/astrologicalSymbols';
-import { zodiacDescriptions } from '../utils/zodiacDescriptions';
-import { planetDescriptions } from '../utils/planetDescriptions';
+import { zodiacSymbols, planetSymbols, zodiacDescriptions, planetDescriptions, zodiacElements, elementGroups } from '../utils/astrology';
 import { decans } from '../utils/decans';
 import { cardTitles, suitDescriptions, numberMeanings } from '../utils/cardTitles';
 import styles from './tarot-sprites.module.scss';
@@ -21,30 +19,6 @@ export default function Home() {
     acc[decan.sign].push(decan);
     return acc;
   }, {});
-
-  // Define the element for each zodiac sign
-  const zodiacElements = {
-    'Aries': { element: 'Fire', suit: 'Wands' },
-    'Leo': { element: 'Fire', suit: 'Wands' },
-    'Sagittarius': { element: 'Fire', suit: 'Wands' },
-    'Taurus': { element: 'Earth', suit: 'Pentacles' },
-    'Virgo': { element: 'Earth', suit: 'Pentacles' },
-    'Capricorn': { element: 'Earth', suit: 'Pentacles' },
-    'Gemini': { element: 'Air', suit: 'Swords' },
-    'Libra': { element: 'Air', suit: 'Swords' },
-    'Aquarius': { element: 'Air', suit: 'Swords' },
-    'Cancer': { element: 'Water', suit: 'Cups' },
-    'Scorpio': { element: 'Water', suit: 'Cups' },
-    'Pisces': { element: 'Water', suit: 'Cups' }
-  };
-
-  // Group zodiac signs by element
-  const elementGroups = {
-    'Fire': ['Aries', 'Leo', 'Sagittarius'],
-    'Earth': ['Taurus', 'Virgo', 'Capricorn'],
-    'Air': ['Gemini', 'Libra', 'Aquarius'],
-    'Water': ['Cancer', 'Scorpio', 'Pisces']
-  };
 
   // Element colors and styling
   const elementStyles = {
