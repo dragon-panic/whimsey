@@ -28,29 +28,6 @@ export const zodiacDescriptions = {
   'Pisces': 'The Fish - A mutable water sign ruled by Jupiter/Neptune, representing imagination and spirituality. Pisceans are compassionate, artistic, and highly intuitive. They have rich creative abilities, deep empathy, and a strong connection to the spiritual realm. Though they can be escapist at times, their artistic sensitivity and healing nature are gifts.'
 };
 
-export const planetSymbols = {
-  'Sun': '☉',
-  'Moon': '☽',
-  'Mercury': '☿',
-  'Venus': '♀',
-  'Mars': '♂',
-  'Jupiter': '♃',
-  'Saturn': '♄'
-};
-
-export const planetDescriptions = {
-  'Sun': 'The center of identity and ego, representing vitality, creativity, and self-expression',
-  'Moon': 'The emotional core, representing intuition, feelings, and subconscious patterns',
-  'Mercury': 'The messenger planet, governing communication, learning, and mental processes',
-  'Venus': 'The planet of love and beauty, ruling relationships, art, and values',
-  'Mars': 'The warrior planet, representing action, desire, and personal drive',
-  'Jupiter': 'The great benefic, bringing expansion, wisdom, and good fortune',
-  'Saturn': 'The taskmaster, teaching discipline, responsibility, and life lessons',
-  'Uranus': 'The awakener, bringing sudden changes, innovation, and rebellion',
-  'Neptune': 'The mystic, ruling spirituality, dreams, and divine inspiration',
-  'Pluto': 'The transformer, governing power, regeneration, and deep transformation'
-};
-
 export const zodiacElements = {
   'Aries': { element: 'Fire', suit: 'Wands' },
   'Leo': { element: 'Fire', suit: 'Wands' },

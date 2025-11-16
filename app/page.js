@@ -1,8 +1,10 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 import { getDecan } from '../utils/calculations';
-import { zodiacSymbols, planetSymbols, zodiacDescriptions, planetDescriptions, zodiacElements, elements } from '../utils/astrology';
+import { zodiacSymbols, zodiacDescriptions, zodiacElements, elements } from '../utils/astrology';
+import { planetSymbols, planetsData } from '../utils/planets';
 import { decans } from '../utils/decans';
 import { cardTitles, suitDescriptions, numberMeanings, jungianMeanings, integralMeanings } from '../utils/cards';
 import styles from './tarot-sprites.module.scss';
@@ -283,14 +285,17 @@ export default function Home() {
 
                   <div className="info-box rounded-xl p-6">
                     <p className="text-sm uppercase tracking-wider opacity-70">Governing Planet</p>
-                    <p className="text-xl font-medium flex items-center gap-3 mt-1">
+                    <Link 
+                      href={`/planets#${rulingPlanet.toLowerCase()}`}
+                      className="text-xl font-medium flex items-center gap-3 mt-1 hover:text-blue-300 transition-colors cursor-pointer"
+                    >
                       <span className="symbol text-3xl" title={rulingPlanet}>
                         {planetSymbols[rulingPlanet]}
                       </span>
                       {rulingPlanet}
-                    </p>
+                    </Link>
                     <p className="text-sm mt-2 opacity-80 leading-snug">
-                      {planetDescriptions[rulingPlanet]}
+                      {planetsData[rulingPlanet]?.description}
                     </p>
                   </div>
 
