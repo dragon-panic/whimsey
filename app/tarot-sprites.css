@@ -3,6 +3,11 @@
   height: 208px;
   background-image: url('../public/tarot-cards.jpg');
   background-repeat: no-repeat;
+  transition: background-image 0.3s ease;
+}
+
+html[data-deck="thoth"] .tarot-card {
+  background-image: url('../public/tarot-cards-thoth.png');
 }
 
 /* Major Arcana - Row 0 */

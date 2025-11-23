@@ -17,6 +17,11 @@ $row-pentacles: $card-height * 5;
   height: $card-height;
   background-image: url('../public/tarot-cards.jpg');
   background-repeat: no-repeat;
+  transition: background-image 0.3s ease;
+}
+
+html[data-deck="thoth"] .tarot-card {
+  background-image: url('../public/tarot-cards-thoth.png');
 }
 
 // Function to calculate x position

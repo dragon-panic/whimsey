@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import DeckSwitcher from './DeckSwitcher';
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -22,30 +23,35 @@ export default function Navigation() {
   return (
     <nav className="navigation-bar">
       <div className="nav-container">
-        {navItems.map((item) => (
-          item.disabled ? (
-            <span 
-              key={item.path}
-              className="nav-link nav-link-disabled"
-              title="Coming soon"
-            >
-              <span className="nav-icon">{item.icon}</span>
-              {item.label}
-            </span>
-          ) : (
-            <Link
-              key={item.path}
-              href={item.path}
-              className={`nav-link ${isActive(item.path) ? 'nav-link-active' : ''}`}
-            >
-              <span className="nav-icon">{item.icon}</span>
-              {item.label}
-            </Link>
-          )
-        ))}
+        <div className="nav-links">
+          {navItems.map((item) => (
+            item.disabled ? (
+              <span 
+                key={item.path}
+                className="nav-link nav-link-disabled"
+                title="Coming soon"
+              >
+                <span className="nav-icon">{item.icon}</span>
+                {item.label}
+              </span>
+            ) : (
+              <Link
+                key={item.path}
+                href={item.path}
+                className={`nav-link ${isActive(item.path) ? 'nav-link-active' : ''}`}
+              >
+                <span className="nav-icon">{item.icon}</span>
+                {item.label}
+              </Link>
+            )
+          ))}
+        </div>
+        <DeckSwitcher />
       </div>
     </nav>
   );
 }
+
+
 
 

@@ -19,6 +19,11 @@ $cards-per-row: 13;
   background-repeat: no-repeat;
   transform: scale(1.5);
   transform-origin: center;
+  transition: background-image 0.3s ease;
+}
+
+:global(html[data-deck="thoth"]) .tarot-card {
+  background-image: url('../public/tarot-cards-thoth.png');
 }
 
 // Function to calculate position from index
