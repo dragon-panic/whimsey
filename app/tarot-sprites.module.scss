@@ -1,12 +1,12 @@
-// Sprite sheet dimensions
-$card-width: 122px;
-$card-height: 208px;
+// Sprite sheet dimensions (3000x2354, 13 columns x 6 rows)
+$card-width: 230.77px;
+$card-height: 392.33px;
 $cards-per-row: 13;
 
 // Base card class
 .tarot-card-container {
-  width: calc($card-width * 1.5);
-  height: calc($card-height * 1.5);
+  width: calc($card-width * 1.2);
+  height: calc($card-height * 1.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,9 +15,9 @@ $cards-per-row: 13;
 .tarot-card {
   width: $card-width;
   height: $card-height;
-  background-image: url('../public/tarot-cards.jpg');
+  background-image: url('../public/tarot-cards-rws.png');
   background-repeat: no-repeat;
-  transform: scale(1.5);
+  transform: scale(1.2);
   transform-origin: center;
   transition: background-image 0.3s ease;
 }

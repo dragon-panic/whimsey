@@ -1,21 +1,21 @@
-// Sprite sheet dimensions
-$card-width: 122px;
-$card-height: 208px;
+// Sprite sheet dimensions (3000x2354, 13 columns x 6 rows)
+$card-width: 230.77px;
+$card-height: 392.33px;
 $cards-per-row: 13;
 
 // Calculate row positions
 $row-major: 0;        // Major Arcana row 1
-$row-major2: $card-height;    // Major Arcana row 2
-$row-wands: $card-height * 2;
-$row-cups: $card-height * 3;
-$row-swords: $card-height * 4;
-$row-pentacles: $card-height * 5;
+$row-major2: -$card-height;    // Major Arcana row 2
+$row-wands: -$card-height * 2;
+$row-cups: -$card-height * 3;
+$row-swords: -$card-height * 4;
+$row-pentacles: -$card-height * 5;
 
 // Base card class
 .tarot-card {
   width: $card-width;
   height: $card-height;
-  background-image: url('../public/tarot-cards.jpg');
+  background-image: url('../public/tarot-cards-rws.png');
   background-repeat: no-repeat;
   transition: background-image 0.3s ease;
 }

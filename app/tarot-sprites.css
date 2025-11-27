@@ -1,7 +1,7 @@
 .tarot-card {
-  width: 122px;
-  height: 208px;
-  background-image: url('../public/tarot-cards.jpg');
+  width: 230.77px;
+  height: 392.33px;
+  background-image: url('../public/tarot-cards-rws.png');
   background-repeat: no-repeat;
   transition: background-image 0.3s ease;
 }
@@ -10,88 +10,92 @@ html[data-deck="thoth"] .tarot-card {
   background-image: url('../public/tarot-cards-thoth.png');
 }
 
-/* Major Arcana - Row 0 */
+/* Major Arcana - Row 0 (indices 0-12) */
 .card-fool { background-position: 0 0; }
-.card-magician { background-position: -122px 0; }
-.card-high-priestess { background-position: -244px 0; }
-.card-empress { background-position: -366px 0; }
-.card-emperor { background-position: -488px 0; }
-.card-hierophant { background-position: -610px 0; }
-.card-lovers { background-position: -732px 0; }
-.card-chariot { background-position: -854px 0; }
-.card-strength { background-position: -976px 0; }
-.card-hermit { background-position: -1098px 0; }
-.card-wheel-of-fortune { background-position: -1220px 0; }
-.card-justice { background-position: -1342px 0; }
-.card-hanged-man { background-position: -1464px 0; }
+.card-magician { background-position: -230.77px 0; }
+.card-high-priestess { background-position: -461.54px 0; }
+.card-empress { background-position: -692.31px 0; }
+.card-emperor { background-position: -923.08px 0; }
+.card-hierophant { background-position: -1153.85px 0; }
+.card-lovers { background-position: -1384.62px 0; }
+.card-chariot { background-position: -1615.38px 0; }
+.card-strength { background-position: -1846.15px 0; }
+.card-hermit { background-position: -2076.92px 0; }
+.card-wheel-of-fortune { background-position: -2307.69px 0; }
+.card-justice { background-position: -2538.46px 0; }
+.card-hanged-man { background-position: -2769.23px 0; }
 
-/* Major Arcana - Row 1 */
-.card-death { background-position: 0 -208px; }
-.card-temperance { background-position: -122px -208px; }
-.card-devil { background-position: -244px -208px; }
-.card-tower { background-position: -366px -208px; }
-.card-star { background-position: -488px -208px; }
-.card-moon { background-position: -610px -208px; }
-.card-sun { background-position: -732px -208px; }
-.card-judgement { background-position: -854px -208px; }
-.card-world { background-position: -976px -208px; }
+/* Major Arcana - Row 1 (indices 13-21) */
+.card-death { background-position: 0 -392.33px; }
+.card-temperance { background-position: -230.77px -392.33px; }
+.card-devil { background-position: -461.54px -392.33px; }
+.card-tower { background-position: -692.31px -392.33px; }
+.card-star { background-position: -923.08px -392.33px; }
+.card-moon { background-position: -1153.85px -392.33px; }
+.card-sun { background-position: -1384.62px -392.33px; }
+.card-judgement { background-position: -1615.38px -392.33px; }
+.card-world { background-position: -1846.15px -392.33px; }
 
-/* Wands - Row 2 */
-.card-ace-of-wands { background-position: 0 -416px; }
-.card-2-of-wands { background-position: -122px -416px; }
-.card-3-of-wands { background-position: -244px -416px; }
-.card-4-of-wands { background-position: -366px -416px; }
-.card-5-of-wands { background-position: -488px -416px; }
-.card-6-of-wands { background-position: -610px -416px; }
-.card-7-of-wands { background-position: -732px -416px; }
-.card-8-of-wands { background-position: -854px -416px; }
-.card-9-of-wands { background-position: -976px -416px; }
-.card-10-of-wands { background-position: -1098px -416px; }
-.card-page-of-wands { background-position: -1220px -416px; }
-.card-knight-of-wands { background-position: -1342px -416px; }
-.card-queen-of-wands { background-position: -1464px -416px; }
+/* Wands - Row 1 positions 9-12, Row 2 positions 0-9 */
+.card-ace-of-wands { background-position: -2076.92px -392.33px; }
+.card-2-of-wands { background-position: -2307.69px -392.33px; }
+.card-3-of-wands { background-position: -2538.46px -392.33px; }
+.card-4-of-wands { background-position: -2769.23px -392.33px; }
+.card-5-of-wands { background-position: 0 -784.67px; }
+.card-6-of-wands { background-position: -230.77px -784.67px; }
+.card-7-of-wands { background-position: -461.54px -784.67px; }
+.card-8-of-wands { background-position: -692.31px -784.67px; }
+.card-9-of-wands { background-position: -923.08px -784.67px; }
+.card-10-of-wands { background-position: -1153.85px -784.67px; }
+.card-page-of-wands { background-position: -1384.62px -784.67px; }
+.card-knight-of-wands { background-position: -1615.38px -784.67px; }
+.card-queen-of-wands { background-position: -1846.15px -784.67px; }
+.card-king-of-wands { background-position: -2076.92px -784.67px; }
 
-/* Cups - Row 3 */
-.card-ace-of-cups { background-position: 0 -624px; }
-.card-2-of-cups { background-position: -122px -624px; }
-.card-3-of-cups { background-position: -244px -624px; }
-.card-4-of-cups { background-position: -366px -624px; }
-.card-5-of-cups { background-position: -488px -624px; }
-.card-6-of-cups { background-position: -610px -624px; }
-.card-7-of-cups { background-position: -732px -624px; }
-.card-8-of-cups { background-position: -854px -624px; }
-.card-9-of-cups { background-position: -976px -624px; }
-.card-10-of-cups { background-position: -1098px -624px; }
-.card-page-of-cups { background-position: -1220px -624px; }
-.card-knight-of-cups { background-position: -1342px -624px; }
-.card-queen-of-cups { background-position: -1464px -624px; }
+/* Cups - Row 2 positions 10-12, Row 3 positions 0-10 */
+.card-ace-of-cups { background-position: -2307.69px -784.67px; }
+.card-2-of-cups { background-position: -2538.46px -784.67px; }
+.card-3-of-cups { background-position: -2769.23px -784.67px; }
+.card-4-of-cups { background-position: 0 -1177px; }
+.card-5-of-cups { background-position: -230.77px -1177px; }
+.card-6-of-cups { background-position: -461.54px -1177px; }
+.card-7-of-cups { background-position: -692.31px -1177px; }
+.card-8-of-cups { background-position: -923.08px -1177px; }
+.card-9-of-cups { background-position: -1153.85px -1177px; }
+.card-10-of-cups { background-position: -1384.62px -1177px; }
+.card-page-of-cups { background-position: -1615.38px -1177px; }
+.card-knight-of-cups { background-position: -1846.15px -1177px; }
+.card-queen-of-cups { background-position: -2076.92px -1177px; }
+.card-king-of-cups { background-position: -2307.69px -1177px; }
 
-/* Swords - Row 4 */
-.card-ace-of-swords { background-position: 0 -832px; }
-.card-2-of-swords { background-position: -122px -832px; }
-.card-3-of-swords { background-position: -244px -832px; }
-.card-4-of-swords { background-position: -366px -832px; }
-.card-5-of-swords { background-position: -488px -832px; }
-.card-6-of-swords { background-position: -610px -832px; }
-.card-7-of-swords { background-position: -732px -832px; }
-.card-8-of-swords { background-position: -854px -832px; }
-.card-9-of-swords { background-position: -976px -832px; }
-.card-10-of-swords { background-position: -1098px -832px; }
-.card-page-of-swords { background-position: -1220px -832px; }
-.card-knight-of-swords { background-position: -1342px -832px; }
-.card-queen-of-swords { background-position: -1464px -832px; }
+/* Swords - Row 3 positions 11-12, Row 4 positions 0-11 */
+.card-ace-of-swords { background-position: -2538.46px -1177px; }
+.card-2-of-swords { background-position: -2769.23px -1177px; }
+.card-3-of-swords { background-position: 0 -1569.33px; }
+.card-4-of-swords { background-position: -230.77px -1569.33px; }
+.card-5-of-swords { background-position: -461.54px -1569.33px; }
+.card-6-of-swords { background-position: -692.31px -1569.33px; }
+.card-7-of-swords { background-position: -923.08px -1569.33px; }
+.card-8-of-swords { background-position: -1153.85px -1569.33px; }
+.card-9-of-swords { background-position: -1384.62px -1569.33px; }
+.card-10-of-swords { background-position: -1615.38px -1569.33px; }
+.card-page-of-swords { background-position: -1846.15px -1569.33px; }
+.card-knight-of-swords { background-position: -2076.92px -1569.33px; }
+.card-queen-of-swords { background-position: -2307.69px -1569.33px; }
+.card-king-of-swords { background-position: -2538.46px -1569.33px; }
 
-/* Pentacles - Row 5 */
-.card-ace-of-pentacles { background-position: 0 -1040px; }
-.card-2-of-pentacles { background-position: -122px -1040px; }
-.card-3-of-pentacles { background-position: -244px -1040px; }
-.card-4-of-pentacles { background-position: -366px -1040px; }
-.card-5-of-pentacles { background-position: -488px -1040px; }
-.card-6-of-pentacles { background-position: -610px -1040px; }
-.card-7-of-pentacles { background-position: -732px -1040px; }
-.card-8-of-pentacles { background-position: -854px -1040px; }
-.card-9-of-pentacles { background-position: -976px -1040px; }
-.card-10-of-pentacles { background-position: -1098px -1040px; }
-.card-page-of-pentacles { background-position: -1220px -1040px; }
-.card-knight-of-pentacles { background-position: -1342px -1040px; }
-.card-queen-of-pentacles { background-position: -1464px -1040px; } 
+/* Pentacles - Row 4 position 12, Row 5 positions 0-12 */
+.card-ace-of-pentacles { background-position: -2769.23px -1569.33px; }
+.card-2-of-pentacles { background-position: 0 -1961.67px; }
+.card-3-of-pentacles { background-position: -230.77px -1961.67px; }
+.card-4-of-pentacles { background-position: -461.54px -1961.67px; }
+.card-5-of-pentacles { background-position: -692.31px -1961.67px; }
+.card-6-of-pentacles { background-position: -923.08px -1961.67px; }
+.card-7-of-pentacles { background-position: -1153.85px -1961.67px; }
+.card-8-of-pentacles { background-position: -1384.62px -1961.67px; }
+.card-9-of-pentacles { background-position: -1615.38px -1961.67px; }
+.card-10-of-pentacles { background-position: -1846.15px -1961.67px; }
+.card-page-of-pentacles { background-position: -2076.92px -1961.67px; }
+.card-knight-of-pentacles { background-position: -2307.69px -1961.67px; }
+.card-queen-of-pentacles { background-position: -2538.46px -1961.67px; }
+.card-king-of-pentacles { background-position: -2769.23px -1961.67px; }
