@@ -6,7 +6,7 @@ import { getDecan } from '../utils/calculations';
 import { zodiacSymbols, zodiacDescriptions, zodiacElements, elements } from '../utils/astrology';
 import { planetSymbols, planetsData } from '../utils/planets';
 import { decans } from '../utils/decans';
-import { cardTitles, suitDescriptions, numberMeanings, jungianMeanings, integralMeanings } from '../utils/cards';
+import { cardTitles, suitDescriptions, numberMeanings, jungianMeanings, developmentalMeanings } from '../utils/cards';
 import styles from './tarot-sprites.module.scss';
 
 export default function Home() {
@@ -262,9 +262,37 @@ export default function Home() {
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Integral Interpretation</p>
-                    <p className="text-sm mt-2 opacity-80 leading-snug">
-                      {integralMeanings[selectedDecan.card]}
+                    <p className="text-sm uppercase tracking-wider opacity-70">Power Gods (Red)</p>
+                    <p className="text-sm mt-2 opacity-80 leading-snug italic">
+                      {developmentalMeanings[selectedDecan.card]?.powerGods}
+                    </p>
+                  </div>
+
+                  <div className="info-box rounded-xl p-6 text-left">
+                    <p className="text-sm uppercase tracking-wider opacity-70">Traditional (Amber)</p>
+                    <p className="text-sm mt-2 opacity-80 leading-snug italic">
+                      {developmentalMeanings[selectedDecan.card]?.traditional}
+                    </p>
+                  </div>
+
+                  <div className="info-box rounded-xl p-6 text-left">
+                    <p className="text-sm uppercase tracking-wider opacity-70">Modern (Orange)</p>
+                    <p className="text-sm mt-2 opacity-80 leading-snug italic">
+                      {developmentalMeanings[selectedDecan.card]?.modern}
+                    </p>
+                  </div>
+
+                  <div className="info-box rounded-xl p-6 text-left">
+                    <p className="text-sm uppercase tracking-wider opacity-70">Post-Modern (Green)</p>
+                    <p className="text-sm mt-2 opacity-80 leading-snug italic">
+                      {developmentalMeanings[selectedDecan.card]?.postModern}
+                    </p>
+                  </div>
+
+                  <div className="info-box rounded-xl p-6 text-left">
+                    <p className="text-sm uppercase tracking-wider opacity-70">Meta-Modern (Teal)</p>
+                    <p className="text-sm mt-2 opacity-80 leading-snug italic">
+                      {developmentalMeanings[selectedDecan.card]?.metaModern}
                     </p>
                   </div>
                 </div>
