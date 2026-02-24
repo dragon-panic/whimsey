@@ -17,7 +17,7 @@ export default function Navigation() {
   const navItems = [
     { path: '/', label: 'Tarot', icon: '🃏' },
     { path: '/planets', label: 'Planets', icon: '☉' },
-    { path: '/signs', label: 'Signs', icon: '♈︎', disabled: true }
+    { path: '/signs', label: 'Signs', icon: '♈︎' }
   ];
   
   return (
