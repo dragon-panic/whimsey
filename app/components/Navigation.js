@@ -15,7 +15,7 @@ export default function Navigation() {
   };
   
   const navItems = [
-    { path: '/', label: 'Tarot', icon: '🃏' },
+    { path: '/', label: 'Decan', icon: '🃏' },
     { path: '/planets', label: 'Planets', icon: '☉' },
     { path: '/signs', label: 'Signs', icon: '♈︎' }
   ];
