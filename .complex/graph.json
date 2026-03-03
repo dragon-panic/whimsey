@@ -1,24 +1,5 @@
 {
   "version": 1,
-  "nodes": [
-    {
-      "id": "28G5",
-      "title": "Add Spanish translation for entire site",
-      "state": "latent",
-      "shadowed": false,
-      "part": null,
-      "created_at": "2026-03-03T14:26:42.324686374Z",
-      "updated_at": "2026-03-03T14:26:42.324686374Z"
-    },
-    {
-      "id": "28G5.8M8I",
-      "title": "Build verification and testing",
-      "state": "claimed",
-      "shadowed": false,
-      "part": "claude",
-      "created_at": "2026-03-03T14:26:48.536189133Z",
-      "updated_at": "2026-03-03T16:20:41.228822505Z"
-    }
-  ],
+  "nodes": [],
   "edges": []
 }
