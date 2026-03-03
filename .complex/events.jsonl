@@ -1,0 +1,19 @@
+{"ts":"2026-03-03T14:26:42.324851568+00:00","action":"create","node_id":"28G5","detail":"Add Spanish translation for entire site"}
+{"ts":"2026-03-03T14:26:48.528484610+00:00","action":"create","node_id":"28G5.ROuH","detail":"Create i18n infrastructure (config, LocaleContext, hooks)"}
+{"ts":"2026-03-03T14:26:48.529822516+00:00","action":"create","node_id":"28G5.OtRC","detail":"Extract English UI strings into i18n/ui/en.json"}
+{"ts":"2026-03-03T14:26:48.531110500+00:00","action":"create","node_id":"28G5.k5Ih","detail":"Restructure App Router with [locale] dynamic segment"}
+{"ts":"2026-03-03T14:26:48.532411821+00:00","action":"create","node_id":"28G5.voaG","detail":"Update components for locale awareness"}
+{"ts":"2026-03-03T14:26:48.533672028+00:00","action":"create","node_id":"28G5.vnEQ","detail":"Create Spanish UI translations (i18n/ui/es.json)"}
+{"ts":"2026-03-03T14:26:48.535002419+00:00","action":"create","node_id":"28G5.Qw0l","detail":"Create Spanish content translations"}
+{"ts":"2026-03-03T14:26:48.536297688+00:00","action":"create","node_id":"28G5.8M8I","detail":"Build verification and testing"}
+{"ts":"2026-03-03T14:27:02.456945004+00:00","action":"create","node_id":"28G5.Qw0l.3rPD","detail":"Translate cards.js (card titles, number meanings, suit descriptions, Jungian & developmental meanings)"}
+{"ts":"2026-03-03T14:27:02.458362237+00:00","action":"create","node_id":"28G5.Qw0l.k3sx","detail":"Translate astrology.js (zodiac descriptions, element descriptions)"}
+{"ts":"2026-03-03T14:27:02.459575414+00:00","action":"create","node_id":"28G5.Qw0l.iFTj","detail":"Translate planets.js (planetary data, meanings, keywords, influences)"}
+{"ts":"2026-03-03T14:27:02.460864816+00:00","action":"create","node_id":"28G5.Qw0l.Ph1h","detail":"Translate signs.js (major arcana data, modality descriptions, interpretations)"}
+{"ts":"2026-03-03T14:27:02.462189822+00:00","action":"create","node_id":"28G5.Qw0l.VTct","detail":"Translate court.js (rank descriptions, court card data)"}
+{"ts":"2026-03-03T14:27:09.189415114+00:00","action":"create","node_id":"28G5.voaG.31No","detail":"Create LanguageSwitcher component"}
+{"ts":"2026-03-03T14:27:09.190935840+00:00","action":"create","node_id":"28G5.voaG.u2FR","detail":"Update Navigation.js for locale-aware paths and translated labels"}
+{"ts":"2026-03-03T14:27:09.192318445+00:00","action":"create","node_id":"28G5.voaG.WouH","detail":"Update Decan page (app/[locale]/page.js) to use i18n hooks"}
+{"ts":"2026-03-03T14:27:09.193612942+00:00","action":"create","node_id":"28G5.voaG.BQS3","detail":"Update Court page to use i18n hooks"}
+{"ts":"2026-03-03T14:27:09.194969335+00:00","action":"create","node_id":"28G5.voaG.1y31","detail":"Update Signs page to use i18n hooks"}
+{"ts":"2026-03-03T14:27:09.196240234+00:00","action":"create","node_id":"28G5.voaG.mj3m","detail":"Update Planets page to use i18n hooks"}
