@@ -303,7 +303,7 @@ export default function PlanetsPage() {
                       {planet.tarotCards.minor.map((cardObj, index) => (
                         <li key={index} className="text-base opacity-90">
                           • <Link 
-                              href={`/${locale}/${cardObj.link}`}
+                              href={`/${locale}${cardObj.link}`}
                               className="hover:text-blue-300 transition-colors"
                             >
                               {cardObj.card} - {cardObj.title}
