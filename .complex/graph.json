@@ -79,47 +79,62 @@
     {
       "id": "28G5.Qw0l.3rPD",
       "title": "Translate cards.js (card titles, number meanings, suit descriptions, Jungian & developmental meanings)",
-      "state": "latent",
+      "state": "ready",
       "shadowed": false,
       "part": null,
       "created_at": "2026-03-03T14:27:02.456757391Z",
-      "updated_at": "2026-03-03T14:27:02.456757391Z"
+      "updated_at": "2026-03-03T16:07:44.580508962Z",
+      "meta": {
+        "_reason": "parent Qw0l claimed"
+      }
     },
     {
       "id": "28G5.Qw0l.k3sx",
       "title": "Translate astrology.js (zodiac descriptions, element descriptions)",
-      "state": "latent",
+      "state": "ready",
       "shadowed": false,
       "part": null,
       "created_at": "2026-03-03T14:27:02.458262865Z",
-      "updated_at": "2026-03-03T14:27:02.458262865Z"
+      "updated_at": "2026-03-03T16:07:44.582210918Z",
+      "meta": {
+        "_reason": "parent Qw0l claimed"
+      }
     },
     {
       "id": "28G5.Qw0l.iFTj",
       "title": "Translate planets.js (planetary data, meanings, keywords, influences)",
-      "state": "latent",
+      "state": "ready",
       "shadowed": false,
       "part": null,
       "created_at": "2026-03-03T14:27:02.459446531Z",
-      "updated_at": "2026-03-03T14:27:02.459446531Z"
+      "updated_at": "2026-03-03T16:07:44.583551996Z",
+      "meta": {
+        "_reason": "parent Qw0l claimed"
+      }
     },
     {
       "id": "28G5.Qw0l.Ph1h",
       "title": "Translate signs.js (major arcana data, modality descriptions, interpretations)",
-      "state": "latent",
+      "state": "ready",
       "shadowed": false,
       "part": null,
       "created_at": "2026-03-03T14:27:02.460742928Z",
-      "updated_at": "2026-03-03T14:27:02.460742928Z"
+      "updated_at": "2026-03-03T16:07:44.584742261Z",
+      "meta": {
+        "_reason": "parent Qw0l claimed"
+      }
     },
     {
       "id": "28G5.Qw0l.VTct",
       "title": "Translate court.js (rank descriptions, court card data)",
-      "state": "latent",
+      "state": "ready",
       "shadowed": false,
       "part": null,
       "created_at": "2026-03-03T14:27:02.462059295Z",
-      "updated_at": "2026-03-03T14:27:02.462059295Z"
+      "updated_at": "2026-03-03T16:07:44.585811552Z",
+      "meta": {
+        "_reason": "parent Qw0l claimed"
+      }
     },
     {
       "id": "28G5.voaG.31No",

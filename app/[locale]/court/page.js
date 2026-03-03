@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { useDeck } from '../contexts/DeckContext';
-import styles from '../tarot-sprites.module.scss';
+import { useDeck } from '../../contexts/DeckContext';
+import styles from '../../tarot-sprites.module.scss';
 import {
   courtCardData,
   rankNames,
@@ -11,8 +11,8 @@ import {
   suitElements,
   suitOrder,
   rankOrder
-} from '../../utils/court';
-import { elements } from '../../utils/astrology';
+} from '../../../utils/court';
+import { elements } from '../../../utils/astrology';
 
 const elementStyles = {
   'Fire': {

@@ -27,3 +27,8 @@
 {"ts":"2026-03-03T16:06:29.512169453+00:00","action":"claim","node_id":"28G5.OtRC","part":"claude","reason":"extracting UI strings"}
 {"ts":"2026-03-03T16:06:29.513499003+00:00","action":"claim","node_id":"28G5.k5Ih","part":"claude","reason":"restructuring router"}
 {"ts":"2026-03-03T16:06:29.515033970+00:00","action":"claim","node_id":"28G5.Qw0l","part":"claude","reason":"coordinating translation subtasks"}
+{"ts":"2026-03-03T16:07:44.581153020+00:00","action":"surface","node_id":"28G5.Qw0l.3rPD","reason":"parent Qw0l claimed"}
+{"ts":"2026-03-03T16:07:44.582552169+00:00","action":"surface","node_id":"28G5.Qw0l.k3sx","reason":"parent Qw0l claimed"}
+{"ts":"2026-03-03T16:07:44.583870883+00:00","action":"surface","node_id":"28G5.Qw0l.iFTj","reason":"parent Qw0l claimed"}
+{"ts":"2026-03-03T16:07:44.585009689+00:00","action":"surface","node_id":"28G5.Qw0l.Ph1h","reason":"parent Qw0l claimed"}
+{"ts":"2026-03-03T16:07:44.586093387+00:00","action":"surface","node_id":"28G5.Qw0l.VTct","reason":"parent Qw0l claimed"}

@@ -1,2 +1,107 @@
 {
+  "metadata": {
+    "title": "Whimsey Tarot - Golden Dawn Study",
+    "description": "Study the Golden Dawn system through tarot, astrology, and planetary correspondences"
+  },
+  "nav": {
+    "decan": "Decan",
+    "court": "Court",
+    "signs": "Signs",
+    "planets": "Planets",
+    "comingSoon": "Coming soon"
+  },
+  "deckSwitcher": {
+    "rwsTitle": "Rider-Waite-Smith deck",
+    "thothTitle": "Thoth deck"
+  },
+  "common": {
+    "loading": "Loading...",
+    "viewOnGithub": "View on GitHub",
+    "whimseyTarot": "Whimsey Tarot",
+    "backToPlanetaryTable": "Back to Planetary Table"
+  },
+  "labels": {
+    "names": "Names",
+    "cardMeaning": "Card Meaning",
+    "jungianInterpretation": "Jungian Interpretation",
+    "powerGods": "Power Gods (Red)",
+    "traditional": "Traditional (Amber)",
+    "modern": "Modern (Orange)",
+    "postModern": "Post-Modern (Green)",
+    "metaModern": "Meta-Modern (Teal)",
+    "zodiacSign": "Zodiac Sign",
+    "governingPlanet": "Governing Planet",
+    "numberSignificance": "Number Significance",
+    "suitElement": "Suit Element",
+    "suit": "Suit",
+    "rank": "Rank",
+    "elementalFormula": "Elemental Formula",
+    "elementalCombination": "Elemental Combination",
+    "rankElement": "Rank Element",
+    "dates": "Dates",
+    "numerology": "Numerology",
+    "rulingPlanet": "Ruling Planet",
+    "modality": "Modality",
+    "element": "Element",
+    "na": "N/A"
+  },
+  "decanPage": {
+    "subtitle": "Learn Your Lordly Title by Astrological Sign",
+    "description": "The twelve zodiac signs are grouped into four elements, each corresponding to a tarot suit. Each sign contains three decans, represented by the numbered cards of their respective suit.",
+    "suitLabel": "Suit:"
+  },
+  "courtPage": {
+    "subtitle": "Court Cards",
+    "description": "The sixteen court cards represent the elemental aspects of each suit as embodied in human archetypes. Each is both Fire, Water, Air, or Earth <em>of</em> their suit's element — a specific facet of a greater elemental whole.",
+    "rankSuit": "{rank} rank · {suit} suit",
+    "elementOfElement": "As {rankEl} of {suitEl}, this figure embodies the {rankElLower} quality applied to the {suitElLower} realm —",
+    "fireRankDescription": "the active, projective will driving the suit's force forward with authority and initiative.",
+    "waterRankDescription": "the receptive, feeling dimension giving the suit's force depth, empathy, and internal resonance.",
+    "airRankDescription": "the thinking, communicative aspect carrying the suit's force outward through ideas and swift movement.",
+    "earthRankDescription": "the grounding, material aspect holding the suit's force in latent potential, ready to be cultivated into form."
+  },
+  "signsPage": {
+    "subtitle": "Major Arcana by Zodiac Sign",
+    "description": "Each of the twelve zodiac signs is attributed a Major Arcana card in the Golden Dawn system. These trump cards embody the archetypal qualities of their corresponding signs."
+  },
+  "planetsPage": {
+    "title": "The Chaldean Planetary Order",
+    "subtitle": "From the Sphere of the Fixed Stars to the Sublunary Realm",
+    "tableHeaders": {
+      "planet": "Planet",
+      "primaryMeaning": "Primary Meaning",
+      "poeticPointer": "Poetic Pointer",
+      "firstSignRuled": "First Sign Ruled",
+      "influenceOnFirstSign": "Influence on First Sign",
+      "secondSignRuled": "Second Sign Ruled",
+      "influenceOnSecondSign": "Influence on Second Sign"
+    },
+    "quote": "\"As above, so below; as within, so without.\"",
+    "quoteSubtext": "The Seven Sacred Wanderers in their celestial dance",
+    "clickPrompt": "Click on any planet to explore its detailed Golden Dawn correspondences",
+    "noSignsRuled": "No signs ruled in traditional system",
+    "coreAttributes": "Core Attributes",
+    "chaldeanPosition": "Chaldean Position:",
+    "ofSacredWanderers": "of 7 Sacred Wanderers",
+    "hebrewLetter": "Hebrew Letter:",
+    "number": "Number:",
+    "metal": "Metal:",
+    "day": "Day:",
+    "colors": "Colors",
+    "queenScale": "Queen Scale:",
+    "kingScale": "King Scale:",
+    "emperorScale": "Emperor Scale:",
+    "magicalImage": "Magical Image",
+    "esotericMeaning": "Esoteric Meaning",
+    "signsRuled": "Signs Ruled",
+    "essentialDignities": "Essential Dignities",
+    "domicile": "Domicile:",
+    "exaltation": "Exaltation:",
+    "detriment": "Detriment:",
+    "fall": "Fall:",
+    "tarotAssociations": "Tarot Associations",
+    "majorArcana": "Major Arcana",
+    "minorArcana": "Minor Arcana",
+    "keywords": "Keywords"
+  }
 }

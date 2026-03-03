@@ -1,33 +1,36 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useParams } from 'next/navigation';
 import DeckSwitcher from './DeckSwitcher';
 
 export default function Navigation() {
   const pathname = usePathname();
-  
+  const { locale } = useParams();
+
+  const prefix = `/${locale}`;
+
   const isActive = (path) => {
-    if (path === '/') {
-      return pathname === '/';
+    if (path === prefix) {
+      return pathname === prefix || pathname === `${prefix}/`;
     }
     return pathname.startsWith(path);
   };
-  
+
   const navItems = [
-    { path: '/', label: 'Decan', icon: '🃏' },
-    { path: '/court', label: 'Court', icon: '♛' },
-    { path: '/signs', label: 'Signs', icon: '♈︎' },
-    { path: '/planets', label: 'Planets', icon: '☉' },
+    { path: prefix, label: 'Decan', icon: '🃏' },
+    { path: `${prefix}/court`, label: 'Court', icon: '♛' },
+    { path: `${prefix}/signs`, label: 'Signs', icon: '♈︎' },
+    { path: `${prefix}/planets`, label: 'Planets', icon: '☉' },
   ];
-  
+
   return (
     <nav className="navigation-bar">
       <div className="nav-container">
         <div className="nav-links">
           {navItems.map((item) => (
             item.disabled ? (
-              <span 
+              <span
                 key={item.path}
                 className="nav-link nav-link-disabled"
                 title="Coming soon"
@@ -52,7 +55,3 @@ export default function Navigation() {
     </nav>
   );
 }
-
-
-
-

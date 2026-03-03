@@ -1,10 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import { getPlanetsInChaldeanOrder, planetSymbols, planetsData } from '../../utils/planets';
-import { zodiacSymbols } from '../../utils/astrology';
+import { useParams } from 'next/navigation';
+import { getPlanetsInChaldeanOrder, planetSymbols, planetsData } from '../../../utils/planets';
+import { zodiacSymbols } from '../../../utils/astrology';
 
 export default function PlanetsPage() {
+  const { locale } = useParams();
   const planets = getPlanetsInChaldeanOrder();
 
   return (
@@ -301,7 +303,7 @@ export default function PlanetsPage() {
                       {planet.tarotCards.minor.map((cardObj, index) => (
                         <li key={index} className="text-base opacity-90">
                           • <Link 
-                              href={`/${cardObj.link}`}
+                              href={`/${locale}/${cardObj.link}`}
                               className="hover:text-blue-300 transition-colors"
                             >
                               {cardObj.card} - {cardObj.title}

@@ -2,9 +2,10 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { zodiacSymbols, zodiacDescriptions, zodiacElements, elements } from '../../utils/astrology';
-import { planetSymbols, planetsData } from '../../utils/planets';
-import { signsCardData, signsModality, modalityDescriptions, signsRulingPlanet, signsDates, numerologyMeanings } from '../../utils/signs';
+import { useParams } from 'next/navigation';
+import { zodiacSymbols, zodiacDescriptions, zodiacElements, elements } from '../../../utils/astrology';
+import { planetSymbols, planetsData } from '../../../utils/planets';
+import { signsCardData, signsModality, modalityDescriptions, signsRulingPlanet, signsDates, numerologyMeanings } from '../../../utils/signs';
 
 function reduceNumber(n) {
   while (n > 9) {
@@ -12,7 +13,7 @@ function reduceNumber(n) {
   }
   return n;
 }
-import styles from '../tarot-sprites.module.scss';
+import styles from '../../tarot-sprites.module.scss';
 
 const signsList = [
   'Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo',
@@ -83,6 +84,7 @@ const elementStyles = {
 };
 
 export default function SignsPage() {
+  const { locale } = useParams();
   const [selectedSign, setSelectedSign] = useState(null);
   const cardDescriptionRef = useRef(null);
 
@@ -316,7 +318,7 @@ export default function SignsPage() {
                   <div className="info-box rounded-xl p-6">
                     <p className="text-sm uppercase tracking-wider opacity-70">Ruling Planet</p>
                     <Link
-                      href={`/planets#${rulingPlanet.toLowerCase()}`}
+                      href={`/${locale}/planets#${rulingPlanet.toLowerCase()}`}
                       className="text-xl font-medium flex items-center gap-3 mt-1 hover:text-blue-300 transition-colors cursor-pointer"
                     >
                       <span className="symbol text-3xl" title={rulingPlanet}>
