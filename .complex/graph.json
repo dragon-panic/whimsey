@@ -11,18 +11,6 @@
       "updated_at": "2026-03-03T14:26:42.324686374Z"
     },
     {
-      "id": "28G5.ROuH",
-      "title": "Create i18n infrastructure (config, LocaleContext, hooks)",
-      "state": "claimed",
-      "shadowed": false,
-      "part": "claude",
-      "created_at": "2026-03-03T14:26:48.528324889Z",
-      "updated_at": "2026-03-03T16:01:43.260841411Z",
-      "meta": {
-        "_reason": "only surfaced task, building i18n foundation"
-      }
-    },
-    {
       "id": "28G5.OtRC",
       "title": "Extract English UI strings into i18n/ui/en.json",
       "state": "latent",
@@ -178,21 +166,6 @@
   ],
   "edges": [
     {
-      "from": "28G5.ROuH",
-      "to": "28G5.OtRC",
-      "type": "blocks"
-    },
-    {
-      "from": "28G5.ROuH",
-      "to": "28G5.k5Ih",
-      "type": "blocks"
-    },
-    {
-      "from": "28G5.ROuH",
-      "to": "28G5.voaG",
-      "type": "blocks"
-    },
-    {
       "from": "28G5.OtRC",
       "to": "28G5.voaG",
       "type": "blocks"
@@ -205,11 +178,6 @@
     {
       "from": "28G5.k5Ih",
       "to": "28G5.voaG",
-      "type": "blocks"
-    },
-    {
-      "from": "28G5.ROuH",
-      "to": "28G5.Qw0l",
       "type": "blocks"
     },
     {
