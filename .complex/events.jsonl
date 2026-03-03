@@ -20,3 +20,10 @@
 {"ts":"2026-03-03T14:27:58.486092692+00:00","action":"surface","node_id":"28G5.ROuH"}
 {"ts":"2026-03-03T16:01:43.261300835+00:00","action":"claim","node_id":"28G5.ROuH","part":"claude","reason":"only surfaced task, building i18n foundation"}
 {"ts":"2026-03-03T16:05:01.309896728+00:00","action":"integrate","node_id":"28G5.ROuH","reason":"all files created, build passes"}
+{"ts":"2026-03-03T16:06:13.014884816+00:00","action":"surface","node_id":"28G5.OtRC","reason":"blocker ROuH integrated"}
+{"ts":"2026-03-03T16:06:13.016205036+00:00","action":"surface","node_id":"28G5.k5Ih","reason":"blocker ROuH integrated"}
+{"ts":"2026-03-03T16:06:13.017506421+00:00","action":"surface","node_id":"28G5.voaG","reason":"blocker ROuH integrated"}
+{"ts":"2026-03-03T16:06:13.018768870+00:00","action":"surface","node_id":"28G5.Qw0l","reason":"blocker ROuH integrated"}
+{"ts":"2026-03-03T16:06:29.512169453+00:00","action":"claim","node_id":"28G5.OtRC","part":"claude","reason":"extracting UI strings"}
+{"ts":"2026-03-03T16:06:29.513499003+00:00","action":"claim","node_id":"28G5.k5Ih","part":"claude","reason":"restructuring router"}
+{"ts":"2026-03-03T16:06:29.515033970+00:00","action":"claim","node_id":"28G5.Qw0l","part":"claude","reason":"coordinating translation subtasks"}

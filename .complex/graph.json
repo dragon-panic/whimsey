@@ -13,29 +13,38 @@
     {
       "id": "28G5.OtRC",
       "title": "Extract English UI strings into i18n/ui/en.json",
-      "state": "latent",
+      "state": "claimed",
       "shadowed": false,
-      "part": null,
+      "part": "claude",
       "created_at": "2026-03-03T14:26:48.529693019Z",
-      "updated_at": "2026-03-03T14:26:48.529693019Z"
+      "updated_at": "2026-03-03T16:06:29.511756184Z",
+      "meta": {
+        "_reason": "extracting UI strings"
+      }
     },
     {
       "id": "28G5.k5Ih",
       "title": "Restructure App Router with [locale] dynamic segment",
-      "state": "latent",
+      "state": "claimed",
       "shadowed": false,
-      "part": null,
+      "part": "claude",
       "created_at": "2026-03-03T14:26:48.530977886Z",
-      "updated_at": "2026-03-03T14:26:48.530977886Z"
+      "updated_at": "2026-03-03T16:06:29.513101725Z",
+      "meta": {
+        "_reason": "restructuring router"
+      }
     },
     {
       "id": "28G5.voaG",
       "title": "Update components for locale awareness",
-      "state": "latent",
+      "state": "ready",
       "shadowed": false,
       "part": null,
       "created_at": "2026-03-03T14:26:48.532313378Z",
-      "updated_at": "2026-03-03T14:26:48.532313378Z"
+      "updated_at": "2026-03-03T16:06:13.017182224Z",
+      "meta": {
+        "_reason": "blocker ROuH integrated"
+      }
     },
     {
       "id": "28G5.vnEQ",
@@ -49,11 +58,14 @@
     {
       "id": "28G5.Qw0l",
       "title": "Create Spanish content translations",
-      "state": "latent",
+      "state": "claimed",
       "shadowed": false,
-      "part": null,
+      "part": "claude",
       "created_at": "2026-03-03T14:26:48.534880317Z",
-      "updated_at": "2026-03-03T14:26:48.534880317Z"
+      "updated_at": "2026-03-03T16:06:29.514768697Z",
+      "meta": {
+        "_reason": "coordinating translation subtasks"
+      }
     },
     {
       "id": "28G5.8M8I",
