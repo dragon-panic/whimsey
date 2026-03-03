@@ -2,11 +2,14 @@
 
 import Link from 'next/link';
 import { usePathname, useParams } from 'next/navigation';
+import { useT } from '../../i18n/useTranslations';
 import DeckSwitcher from './DeckSwitcher';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navigation() {
   const pathname = usePathname();
   const { locale } = useParams();
+  const t = useT();
 
   const prefix = `/${locale}`;
 
@@ -18,10 +21,10 @@ export default function Navigation() {
   };
 
   const navItems = [
-    { path: prefix, label: 'Decan', icon: '🃏' },
-    { path: `${prefix}/court`, label: 'Court', icon: '♛' },
-    { path: `${prefix}/signs`, label: 'Signs', icon: '♈︎' },
-    { path: `${prefix}/planets`, label: 'Planets', icon: '☉' },
+    { path: prefix, label: t.nav?.decan || 'Decan', icon: '🃏' },
+    { path: `${prefix}/court`, label: t.nav?.court || 'Court', icon: '♛' },
+    { path: `${prefix}/signs`, label: t.nav?.signs || 'Signs', icon: '♈︎' },
+    { path: `${prefix}/planets`, label: t.nav?.planets || 'Planets', icon: '☉' },
   ];
 
   return (
@@ -33,7 +36,7 @@ export default function Navigation() {
               <span
                 key={item.path}
                 className="nav-link nav-link-disabled"
-                title="Coming soon"
+                title={t.nav?.comingSoon || 'Coming soon'}
               >
                 <span className="nav-icon">{item.icon}</span>
                 {item.label}
@@ -50,7 +53,10 @@ export default function Navigation() {
             )
           ))}
         </div>
-        <DeckSwitcher />
+        <div className="flex items-center gap-2">
+          <LanguageSwitcher />
+          <DeckSwitcher />
+        </div>
       </div>
     </nav>
   );

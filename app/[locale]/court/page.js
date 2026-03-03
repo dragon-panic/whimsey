@@ -3,16 +3,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { useDeck } from '../../contexts/DeckContext';
 import styles from '../../tarot-sprites.module.scss';
-import {
-  courtCardData,
-  rankNames,
-  rankElements,
-  rankDescriptions,
-  suitElements,
-  suitOrder,
-  rankOrder
-} from '../../../utils/court';
-import { elements } from '../../../utils/astrology';
+import { useT } from '../../../i18n/useTranslations';
+import { useCourt, useAstrology } from '../../../i18n/useContent';
 
 const elementStyles = {
   'Fire': {
@@ -66,6 +58,9 @@ const suitSymbols = {
 
 export default function CourtPage() {
   const { deck } = useDeck();
+  const t = useT();
+  const { courtCardData, rankNames, rankElements, rankDescriptions, suitElements, suitOrder, rankOrder } = useCourt();
+  const { elements } = useAstrology();
   const [selectedKey, setSelectedKey] = useState(null);
   const cardDescriptionRef = useRef(null);
 
@@ -111,7 +106,7 @@ export default function CourtPage() {
   };
 
   if (!selectedKey) {
-    return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
+    return <div className="min-h-screen flex items-center justify-center">{t.common?.loading || 'Loading...'}</div>;
   }
 
   const cardData = courtCardData[selectedKey];
@@ -129,16 +124,15 @@ export default function CourtPage() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center mb-12">
           <h1 className="text-5xl font-bold text-center accent-text">
-            Whimsey Tarot
+            {t.common?.whimseyTarot || 'Whimsey Tarot'}
           </h1>
         </div>
 
         <div className="mb-8">
           <div className="text-center mb-6 max-w-2xl mx-auto">
-            <h2 className="text-2xl font-semibold mb-2">Court Cards</h2>
+            <h2 className="text-2xl font-semibold mb-2">{t.courtPage?.subtitle}</h2>
             <p className="text-sm opacity-80">
-              The sixteen court cards represent the elemental aspects of each suit as embodied in human archetypes.
-              Each is both Fire, Water, Air, or Earth <em>of</em> their suit's element — a specific facet of a greater elemental whole.
+              {t.courtPage?.description}
             </p>
           </div>
 
@@ -210,7 +204,7 @@ export default function CourtPage() {
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Names</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.names}</p>
                     <h3 className="text-2xl font-medium accent-text mt-2">
                       {deckRankName} of {cardData.suit}
                     </h3>
@@ -221,43 +215,43 @@ export default function CourtPage() {
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Elemental Formula</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.elementalFormula}</p>
                     <p className="text-xl font-medium mt-1">{elementalFormula}</p>
                     <p className="text-sm mt-1 opacity-60">{rankEl} rank · {suitEl} suit</p>
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Card Meaning</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.cardMeaning}</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug">{cardData.description}</p>
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Jungian Interpretation</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.jungianInterpretation}</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug">{cardData.jungian}</p>
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Power Gods (Red)</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.powerGods}</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug italic">{cardData.powerGods}</p>
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Traditional (Amber)</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.traditional}</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug italic">{cardData.traditional}</p>
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Modern (Orange)</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.modern}</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug italic">{cardData.modern}</p>
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Post-Modern (Green)</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.postModern}</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug italic">{cardData.postModern}</p>
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Meta-Modern (Teal)</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.metaModern}</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug italic">{cardData.metaModern}</p>
                   </div>
                 </div>
@@ -265,7 +259,7 @@ export default function CourtPage() {
                 {/* Right column */}
                 <div className="text-left space-y-6">
                   <div className="info-box rounded-xl p-6">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Suit</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.suit}</p>
                     <p className="text-xl font-medium flex items-center gap-3 mt-1">
                       <span className="text-2xl">{suitSymbols[cardData.suit]}</span>
                       {cardData.suit}
@@ -276,7 +270,7 @@ export default function CourtPage() {
                   </div>
 
                   <div className="info-box rounded-xl p-6">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Rank</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.rank}</p>
                     <p className="text-xl font-medium mt-1">
                       {rankNames.rws[cardData.rank]} <span className="opacity-50 text-sm">RWS</span>
                       &nbsp;·&nbsp;
@@ -288,7 +282,7 @@ export default function CourtPage() {
                   </div>
 
                   <div className="info-box rounded-xl p-6">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Suit Element</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.suitElement}</p>
                     <p className="text-xl font-medium mt-1">
                       {elementStyles[suitEl].icon} {suitEl}
                     </p>
@@ -298,7 +292,7 @@ export default function CourtPage() {
                   </div>
 
                   <div className="info-box rounded-xl p-6">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Rank Element</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.rankElement}</p>
                     <p className="text-xl font-medium mt-1">
                       {elementStyles[rankEl].icon} {rankEl}
                     </p>
@@ -308,7 +302,7 @@ export default function CourtPage() {
                   </div>
 
                   <div className={`info-box rounded-xl p-6 border-2 ${es.borderColor}`}>
-                    <p className="text-sm uppercase tracking-wider opacity-70">Elemental Combination</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.elementalCombination}</p>
                     <p className={`text-2xl font-bold mt-2 ${es.textColor}`}>
                       {elementalFormula}
                     </p>
@@ -338,7 +332,7 @@ export default function CourtPage() {
           <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
           </svg>
-          View on GitHub
+          {t.common?.viewOnGithub || 'View on GitHub'}
         </a>
       </footer>
     </main>

@@ -3,15 +3,20 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import { useT } from '../../i18n/useTranslations';
+import { useCards, useAstrology, usePlanets } from '../../i18n/useContent';
 import { getDecan } from '../../utils/calculations';
-import { zodiacSymbols, zodiacDescriptions, zodiacElements, elements } from '../../utils/astrology';
-import { planetSymbols, planetsData } from '../../utils/planets';
+import { zodiacSymbols, zodiacElements } from '../../utils/astrology';
+import { planetSymbols } from '../../utils/planets';
 import { decans } from '../../utils/decans';
-import { cardTitles, suitDescriptions, numberMeanings, jungianMeanings, developmentalMeanings } from '../../utils/cards';
 import styles from '../tarot-sprites.module.scss';
 
 export default function Home() {
   const { locale } = useParams();
+  const t = useT();
+  const { cardTitles, suitDescriptions, numberMeanings, jungianMeanings, developmentalMeanings } = useCards();
+  const { zodiacDescriptions, elements } = useAstrology();
+  const { planetsData } = usePlanets();
   const [selectedDecan, setSelectedDecan] = useState(null);
   const cardDescriptionRef = useRef(null);
   
@@ -144,7 +149,7 @@ export default function Home() {
 
   // If selectedDecan is null (during initial render), show loading or return null
   if (!selectedDecan) {
-    return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
+    return <div className="min-h-screen flex items-center justify-center">{t.common?.loading || 'Loading...'}</div>;
   }
 
   // Get the ruling planet for the selected decan after we've confirmed selectedDecan is not null
@@ -155,16 +160,15 @@ export default function Home() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center mb-12">
           <h1 className="text-5xl font-bold text-center accent-text">
-            Whimsey Tarot
+            {t.common?.whimseyTarot || 'Whimsey Tarot'}
           </h1>
         </div>
 
         <div className="mb-8">
           <div className="text-center mb-6 max-w-2xl mx-auto">
-            <h2 className="text-2xl font-semibold mb-2">Learn Your Lordly Title by Astrological Sign</h2>
+            <h2 className="text-2xl font-semibold mb-2">{t.decanPage?.subtitle}</h2>
             <p className="text-sm opacity-80">
-              The twelve zodiac signs are grouped into four elements, each corresponding to a tarot suit.
-              Each sign contains three decans, represented by the numbered cards of their respective suit.
+              {t.decanPage?.description}
             </p>
           </div>
           
@@ -181,7 +185,7 @@ export default function Home() {
                     <span>{elementStyles[element].icon}</span>
                   </h2>
                   <p className={`text-sm ${elementStyles[element].textColor} opacity-80 font-medium`}>
-                    Suit: {data.signs[0] ? zodiacElements[data.signs[0]].suit : ''}
+                    {t.decanPage?.suitLabel} {data.signs[0] ? zodiacElements[data.signs[0]].suit : ''}
                   </p>
                   <p className={`text-xs ${elementStyles[element].textColor} mt-1 opacity-70`}>
                     {data.description}
@@ -244,55 +248,55 @@ export default function Home() {
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Names</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.names}</p>
                     <h3 className="text-2xl font-medium accent-text mt-2">{selectedDecan.card}</h3>
                     <p className="text-xl mt-2 opacity-90">{cardTitles[selectedDecan.card].title}</p>
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Card Meaning</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.cardMeaning}</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug">
                       {cardTitles[selectedDecan.card].description}
                     </p>
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Jungian Interpretation</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.jungianInterpretation}</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug">
                       {jungianMeanings[selectedDecan.card]}
                     </p>
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Power Gods (Red)</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.powerGods}</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug italic">
                       {developmentalMeanings[selectedDecan.card]?.powerGods}
                     </p>
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Traditional (Amber)</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.traditional}</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug italic">
                       {developmentalMeanings[selectedDecan.card]?.traditional}
                     </p>
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Modern (Orange)</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.modern}</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug italic">
                       {developmentalMeanings[selectedDecan.card]?.modern}
                     </p>
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Post-Modern (Green)</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.postModern}</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug italic">
                       {developmentalMeanings[selectedDecan.card]?.postModern}
                     </p>
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Meta-Modern (Teal)</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.metaModern}</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug italic">
                       {developmentalMeanings[selectedDecan.card]?.metaModern}
                     </p>
@@ -301,7 +305,7 @@ export default function Home() {
 
                 <div className="text-left space-y-6">
                   <div className="info-box rounded-xl p-6">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Zodiac Sign</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.zodiacSign}</p>
                     <Link
                       href={`/${locale}/signs#${selectedDecan.sign.toLowerCase()}`}
                       className="text-xl font-medium flex items-center gap-3 mt-1 hover:text-blue-300 transition-colors cursor-pointer"
@@ -317,7 +321,7 @@ export default function Home() {
                   </div>
 
                   <div className="info-box rounded-xl p-6">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Governing Planet</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.governingPlanet}</p>
                     <Link 
                       href={`/${locale}/planets#${rulingPlanet.toLowerCase()}`}
                       className="text-xl font-medium flex items-center gap-3 mt-1 hover:text-blue-300 transition-colors cursor-pointer"
@@ -333,7 +337,7 @@ export default function Home() {
                   </div>
 
                   <div className="info-box rounded-xl p-6">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Number Significance</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.numberSignificance}</p>
                     <p className="text-xl font-medium flex items-center gap-3 mt-1">
                       {selectedDecan.card.split(' ')[0]}
                     </p>
@@ -343,7 +347,7 @@ export default function Home() {
                   </div>
 
                   <div className="info-box rounded-xl p-6">
-                    <p className="text-sm uppercase tracking-wider opacity-70">Suit Element</p>
+                    <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.suitElement}</p>
                     <p className="text-xl font-medium flex items-center gap-3 mt-1">
                       {selectedDecan.card.split(' ').slice(-1)[0]}
                     </p>
@@ -368,7 +372,7 @@ export default function Home() {
           <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
           </svg>
-          View on GitHub
+          {t.common?.viewOnGithub || 'View on GitHub'}
         </a>
       </footer>
     </main>

@@ -42,3 +42,25 @@
 {"ts":"2026-03-03T16:13:28.662518567+00:00","action":"integrate","node_id":"28G5.Qw0l.VTct","reason":"court.js translated"}
 {"ts":"2026-03-03T16:13:39.073986352+00:00","action":"claim","node_id":"28G5.Qw0l.Ph1h","part":"claude"}
 {"ts":"2026-03-03T16:13:39.075284838+00:00","action":"integrate","node_id":"28G5.Qw0l.Ph1h","reason":"signs.js translated"}
+{"ts":"2026-03-03T16:14:47.093806412+00:00","action":"claim","node_id":"28G5.voaG","part":"claude","reason":"all blockers resolved, updating components"}
+{"ts":"2026-03-03T16:14:47.095113671+00:00","action":"surface","node_id":"28G5.voaG.31No","reason":"parent voaG claimed"}
+{"ts":"2026-03-03T16:14:47.096288880+00:00","action":"surface","node_id":"28G5.voaG.u2FR","reason":"parent voaG claimed"}
+{"ts":"2026-03-03T16:14:47.097275540+00:00","action":"surface","node_id":"28G5.voaG.WouH","reason":"parent voaG claimed"}
+{"ts":"2026-03-03T16:14:47.098566120+00:00","action":"surface","node_id":"28G5.voaG.BQS3","reason":"parent voaG claimed"}
+{"ts":"2026-03-03T16:14:47.099687455+00:00","action":"surface","node_id":"28G5.voaG.1y31","reason":"parent voaG claimed"}
+{"ts":"2026-03-03T16:14:47.100836278+00:00","action":"surface","node_id":"28G5.voaG.mj3m","reason":"parent voaG claimed"}
+{"ts":"2026-03-03T16:15:51.542943563+00:00","action":"surface","node_id":"28G5.vnEQ","reason":"blocker OtRC integrated"}
+{"ts":"2026-03-03T16:15:51.544328620+00:00","action":"claim","node_id":"28G5.vnEQ","part":"claude","reason":"es.json created"}
+{"ts":"2026-03-03T16:15:51.545654702+00:00","action":"integrate","node_id":"28G5.vnEQ","reason":"all UI strings translated to Spanish"}
+{"ts":"2026-03-03T16:18:14.473190354+00:00","action":"claim","node_id":"28G5.Qw0l.3rPD","part":"claude"}
+{"ts":"2026-03-03T16:18:14.474503968+00:00","action":"integrate","node_id":"28G5.Qw0l.3rPD","reason":"cards.js fully translated to Spanish"}
+{"ts":"2026-03-03T16:20:25.402839266+00:00","action":"integrate","node_id":"28G5.voaG.31No"}
+{"ts":"2026-03-03T16:20:25.403806182+00:00","action":"integrate","node_id":"28G5.voaG.u2FR"}
+{"ts":"2026-03-03T16:20:25.404980907+00:00","action":"integrate","node_id":"28G5.voaG.WouH"}
+{"ts":"2026-03-03T16:20:25.406088907+00:00","action":"integrate","node_id":"28G5.voaG.BQS3"}
+{"ts":"2026-03-03T16:20:25.406981224+00:00","action":"integrate","node_id":"28G5.voaG.1y31"}
+{"ts":"2026-03-03T16:20:25.408214047+00:00","action":"integrate","node_id":"28G5.voaG.mj3m"}
+{"ts":"2026-03-03T16:20:28.360579188+00:00","action":"integrate","node_id":"28G5.voaG"}
+{"ts":"2026-03-03T16:20:28.361711354+00:00","action":"integrate","node_id":"28G5.Qw0l"}
+{"ts":"2026-03-03T16:20:41.227989316+00:00","action":"surface","node_id":"28G5.8M8I"}
+{"ts":"2026-03-03T16:20:41.228988535+00:00","action":"claim","node_id":"28G5.8M8I","part":"claude"}

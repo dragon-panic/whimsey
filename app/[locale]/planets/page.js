@@ -2,11 +2,14 @@
 
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import { getPlanetsInChaldeanOrder, planetSymbols, planetsData } from '../../../utils/planets';
+import { useT } from '../../../i18n/useTranslations';
+import { usePlanets } from '../../../i18n/useContent';
 import { zodiacSymbols } from '../../../utils/astrology';
 
 export default function PlanetsPage() {
   const { locale } = useParams();
+  const t = useT();
+  const { getPlanetsInChaldeanOrder, planetSymbols, planetsData } = usePlanets();
   const planets = getPlanetsInChaldeanOrder();
 
   return (
@@ -14,10 +17,10 @@ export default function PlanetsPage() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center mb-12">
           <h1 className="text-5xl font-bold text-center accent-text mb-2">
-            ☽ The Chaldean Planetary Order ☉
+            {"☽ " + (t.planetsPage?.title || 'The Chaldean Planetary Order') + " ☉"}
           </h1>
           <p className="page-subtitle">
-            From the Sphere of the Fixed Stars to the Sublunary Realm
+            {t.planetsPage?.subtitle}
           </p>
         </div>
 
@@ -27,13 +30,13 @@ export default function PlanetsPage() {
           <table className="mystical-table">
             <thead>
               <tr>
-                <th>Planet</th>
-                <th>Primary Meaning</th>
-                <th>Poetic Pointer</th>
-                <th>First Sign Ruled</th>
-                <th>Influence on First Sign</th>
-                <th>Second Sign Ruled</th>
-                <th>Influence on Second Sign</th>
+                <th>{t.planetsPage?.tableHeaders?.planet}</th>
+                <th>{t.planetsPage?.tableHeaders?.primaryMeaning}</th>
+                <th>{t.planetsPage?.tableHeaders?.poeticPointer}</th>
+                <th>{t.planetsPage?.tableHeaders?.firstSignRuled}</th>
+                <th>{t.planetsPage?.tableHeaders?.influenceOnFirstSign}</th>
+                <th>{t.planetsPage?.tableHeaders?.secondSignRuled}</th>
+                <th>{t.planetsPage?.tableHeaders?.influenceOnSecondSign}</th>
               </tr>
             </thead>
             <tbody>
@@ -65,7 +68,7 @@ export default function PlanetsPage() {
                     </>
                   ) : (
                     <>
-                      <td className="na-cell">N/A</td>
+                      <td className="na-cell">{t.labels?.na || 'N/A'}</td>
                       <td className="na-cell">—</td>
                     </>
                   )}
@@ -81,7 +84,7 @@ export default function PlanetsPage() {
                     </>
                   ) : (
                     <>
-                      <td className="na-cell">N/A</td>
+                      <td className="na-cell">{t.labels?.na || 'N/A'}</td>
                       <td className="na-cell">—</td>
                     </>
                   )}
@@ -94,13 +97,13 @@ export default function PlanetsPage() {
         <div className="decorative-line"></div>
 
         <div className="text-center" style={{ color: '#8b7dd8', fontStyle: 'italic', marginTop: '2rem' }}>
-          "As above, so below; as within, so without."<br />
-          The Seven Sacred Wanderers in their celestial dance
+          {t.planetsPage?.quote}<br />
+          {t.planetsPage?.quoteSubtext}
         </div>
 
         <div className="mt-12 text-center mb-16">
           <p className="text-lg mb-6 opacity-80">
-            Click on any planet to explore its detailed Golden Dawn correspondences
+            {t.planetsPage?.clickPrompt}
           </p>
         </div>
 
@@ -134,29 +137,29 @@ export default function PlanetsPage() {
                 {/* Core Attributes */}
                 <div className="info-box rounded-xl p-6">
                   <h3 className="text-xl font-semibold accent-text mb-4 uppercase tracking-wider">
-                    Core Attributes
+                    {t.planetsPage?.coreAttributes}
                   </h3>
                   <div className="space-y-3">
                     <div>
-                      <span className="text-sm opacity-70 uppercase tracking-wide">Chaldean Position:</span>
+                      <span className="text-sm opacity-70 uppercase tracking-wide">{t.planetsPage?.chaldeanPosition}</span>
                       <p className="text-lg">
-                        #{planet.chaldeanPosition} of 7 Sacred Wanderers
+                        #{planet.chaldeanPosition} {t.planetsPage?.ofSacredWanderers}
                       </p>
                     </div>
                     <div>
-                      <span className="text-sm opacity-70 uppercase tracking-wide">Hebrew Letter:</span>
+                      <span className="text-sm opacity-70 uppercase tracking-wide">{t.planetsPage?.hebrewLetter}</span>
                       <p className="text-lg">{planet.hebrewLetter}</p>
                     </div>
                     <div>
-                      <span className="text-sm opacity-70 uppercase tracking-wide">Number:</span>
+                      <span className="text-sm opacity-70 uppercase tracking-wide">{t.planetsPage?.number}</span>
                       <p className="text-lg">{planet.number}</p>
                     </div>
                     <div>
-                      <span className="text-sm opacity-70 uppercase tracking-wide">Metal:</span>
+                      <span className="text-sm opacity-70 uppercase tracking-wide">{t.planetsPage?.metal}</span>
                       <p className="text-lg">{planet.metal}</p>
                     </div>
                     <div>
-                      <span className="text-sm opacity-70 uppercase tracking-wide">Day:</span>
+                      <span className="text-sm opacity-70 uppercase tracking-wide">{t.planetsPage?.day}</span>
                       <p className="text-lg">{planet.day}</p>
                     </div>
                   </div>
@@ -165,19 +168,19 @@ export default function PlanetsPage() {
                 {/* Colors */}
                 <div className="info-box rounded-xl p-6">
                   <h3 className="text-xl font-semibold accent-text mb-4 uppercase tracking-wider">
-                    Colors
+                    {t.planetsPage?.colors}
                   </h3>
                   <div className="space-y-2">
                     <div>
-                      <span className="text-sm opacity-70">Queen Scale:</span>
+                      <span className="text-sm opacity-70">{t.planetsPage?.queenScale}</span>
                       <p className="text-lg">{planet.colors.queen}</p>
                     </div>
                     <div>
-                      <span className="text-sm opacity-70">King Scale:</span>
+                      <span className="text-sm opacity-70">{t.planetsPage?.kingScale}</span>
                       <p className="text-lg">{planet.colors.king}</p>
                     </div>
                     <div>
-                      <span className="text-sm opacity-70">Emperor Scale:</span>
+                      <span className="text-sm opacity-70">{t.planetsPage?.emperorScale}</span>
                       <p className="text-lg">{planet.colors.emperor}</p>
                     </div>
                   </div>
@@ -186,7 +189,7 @@ export default function PlanetsPage() {
                 {/* Magical Image */}
                 <div className="info-box rounded-xl p-6">
                   <h3 className="text-xl font-semibold accent-text mb-4 uppercase tracking-wider">
-                    Magical Image
+                    {t.planetsPage?.magicalImage}
                   </h3>
                   <p className="text-base italic opacity-90 leading-relaxed">
                     {planet.magicalImage}
@@ -199,7 +202,7 @@ export default function PlanetsPage() {
                 {/* Description */}
                 <div className="info-box rounded-xl p-6">
                   <h3 className="text-xl font-semibold accent-text mb-4 uppercase tracking-wider">
-                    Esoteric Meaning
+                    {t.planetsPage?.esotericMeaning}
                   </h3>
                   <p className="text-base opacity-90 leading-relaxed">
                     {planet.description}
@@ -209,7 +212,7 @@ export default function PlanetsPage() {
                 {/* Signs Ruled */}
                 <div className="info-box rounded-xl p-6">
                   <h3 className="text-xl font-semibold accent-text mb-4 uppercase tracking-wider">
-                    Signs Ruled
+                    {t.planetsPage?.signsRuled}
                   </h3>
                   <div className="space-y-4">
                     {planet.signsRuled && planet.signsRuled.length > 0 ? (
@@ -232,7 +235,7 @@ export default function PlanetsPage() {
                         </div>
                       ))
                     ) : (
-                      <p className="text-sm opacity-60">No signs ruled in traditional system</p>
+                      <p className="text-sm opacity-60">{t.planetsPage?.noSignsRuled}</p>
                     )}
                   </div>
                 </div>
@@ -240,11 +243,11 @@ export default function PlanetsPage() {
                 {/* Dignities */}
                 <div className="info-box rounded-xl p-6">
                   <h3 className="text-xl font-semibold accent-text mb-4 uppercase tracking-wider">
-                    Essential Dignities
+                    {t.planetsPage?.essentialDignities}
                   </h3>
                   <div className="space-y-2 text-sm">
                     <div>
-                      <span className="opacity-70">Domicile:</span>
+                      <span className="opacity-70">{t.planetsPage?.domicile}</span>
                       <span className="ml-2">
                         {planet.inDignity.domicile.map((sign, idx) => (
                           <span key={idx} className="inline-flex items-center gap-1 mr-2">
@@ -254,13 +257,13 @@ export default function PlanetsPage() {
                       </span>
                     </div>
                     <div>
-                      <span className="opacity-70">Exaltation:</span>
+                      <span className="opacity-70">{t.planetsPage?.exaltation}</span>
                       <span className="ml-2">
                         {zodiacSymbols[planet.inDignity.exaltation]} {planet.inDignity.exaltation}
                       </span>
                     </div>
                     <div>
-                      <span className="opacity-70">Detriment:</span>
+                      <span className="opacity-70">{t.planetsPage?.detriment}</span>
                       <span className="ml-2">
                         {planet.inDignity.detriment.map((sign, idx) => (
                           <span key={idx} className="inline-flex items-center gap-1 mr-2">
@@ -270,7 +273,7 @@ export default function PlanetsPage() {
                       </span>
                     </div>
                     <div>
-                      <span className="opacity-70">Fall:</span>
+                      <span className="opacity-70">{t.planetsPage?.fall}</span>
                       <span className="ml-2">
                         {zodiacSymbols[planet.inDignity.fall]} {planet.inDignity.fall}
                       </span>
@@ -284,11 +287,11 @@ export default function PlanetsPage() {
             <div className="mt-6 max-w-6xl mx-auto">
               <div className="info-box rounded-xl p-6">
                 <h3 className="text-xl font-semibold accent-text mb-4 uppercase tracking-wider">
-                  Tarot Associations
+                  {t.planetsPage?.tarotAssociations}
                 </h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="text-lg font-medium mb-2 primary-meaning">Major Arcana</h4>
+                    <h4 className="text-lg font-medium mb-2 primary-meaning">{t.planetsPage?.majorArcana}</h4>
                     <ul className="space-y-1">
                       {planet.tarotCards.major.map((card, index) => (
                         <li key={index} className="text-base opacity-90">
@@ -298,7 +301,7 @@ export default function PlanetsPage() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium mb-2 primary-meaning">Minor Arcana</h4>
+                    <h4 className="text-lg font-medium mb-2 primary-meaning">{t.planetsPage?.minorArcana}</h4>
                     <ul className="space-y-1">
                       {planet.tarotCards.minor.map((cardObj, index) => (
                         <li key={index} className="text-base opacity-90">
@@ -320,7 +323,7 @@ export default function PlanetsPage() {
             <div className="mt-6 max-w-6xl mx-auto">
               <div className="info-box rounded-xl p-6">
                 <h3 className="text-xl font-semibold accent-text mb-4 uppercase tracking-wider">
-                  Keywords
+                  {t.planetsPage?.keywords}
                 </h3>
                 <div className="flex flex-wrap gap-3">
                   {planet.keywords.map((keyword, index) => (
@@ -345,7 +348,7 @@ export default function PlanetsPage() {
                 href="planets"
                 className="text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center gap-2"
               >
-                ↑ Back to Planetary Table
+                {"↑ " + (t.common?.backToPlanetaryTable || 'Back to Planetary Table')}
               </a>
             </div>
           </div>
