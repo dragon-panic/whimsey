@@ -11,30 +11,6 @@
       "updated_at": "2026-03-03T14:26:42.324686374Z"
     },
     {
-      "id": "28G5.OtRC",
-      "title": "Extract English UI strings into i18n/ui/en.json",
-      "state": "claimed",
-      "shadowed": false,
-      "part": "claude",
-      "created_at": "2026-03-03T14:26:48.529693019Z",
-      "updated_at": "2026-03-03T16:06:29.511756184Z",
-      "meta": {
-        "_reason": "extracting UI strings"
-      }
-    },
-    {
-      "id": "28G5.k5Ih",
-      "title": "Restructure App Router with [locale] dynamic segment",
-      "state": "claimed",
-      "shadowed": false,
-      "part": "claude",
-      "created_at": "2026-03-03T14:26:48.530977886Z",
-      "updated_at": "2026-03-03T16:06:29.513101725Z",
-      "meta": {
-        "_reason": "restructuring router"
-      }
-    },
-    {
       "id": "28G5.voaG",
       "title": "Update components for locale awareness",
       "state": "ready",
@@ -84,54 +60,6 @@
       "part": null,
       "created_at": "2026-03-03T14:27:02.456757391Z",
       "updated_at": "2026-03-03T16:07:44.580508962Z",
-      "meta": {
-        "_reason": "parent Qw0l claimed"
-      }
-    },
-    {
-      "id": "28G5.Qw0l.k3sx",
-      "title": "Translate astrology.js (zodiac descriptions, element descriptions)",
-      "state": "ready",
-      "shadowed": false,
-      "part": null,
-      "created_at": "2026-03-03T14:27:02.458262865Z",
-      "updated_at": "2026-03-03T16:07:44.582210918Z",
-      "meta": {
-        "_reason": "parent Qw0l claimed"
-      }
-    },
-    {
-      "id": "28G5.Qw0l.iFTj",
-      "title": "Translate planets.js (planetary data, meanings, keywords, influences)",
-      "state": "ready",
-      "shadowed": false,
-      "part": null,
-      "created_at": "2026-03-03T14:27:02.459446531Z",
-      "updated_at": "2026-03-03T16:07:44.583551996Z",
-      "meta": {
-        "_reason": "parent Qw0l claimed"
-      }
-    },
-    {
-      "id": "28G5.Qw0l.Ph1h",
-      "title": "Translate signs.js (major arcana data, modality descriptions, interpretations)",
-      "state": "ready",
-      "shadowed": false,
-      "part": null,
-      "created_at": "2026-03-03T14:27:02.460742928Z",
-      "updated_at": "2026-03-03T16:07:44.584742261Z",
-      "meta": {
-        "_reason": "parent Qw0l claimed"
-      }
-    },
-    {
-      "id": "28G5.Qw0l.VTct",
-      "title": "Translate court.js (rank descriptions, court card data)",
-      "state": "ready",
-      "shadowed": false,
-      "part": null,
-      "created_at": "2026-03-03T14:27:02.462059295Z",
-      "updated_at": "2026-03-03T16:07:44.585811552Z",
       "meta": {
         "_reason": "parent Qw0l claimed"
       }
@@ -192,21 +120,6 @@
     }
   ],
   "edges": [
-    {
-      "from": "28G5.OtRC",
-      "to": "28G5.voaG",
-      "type": "blocks"
-    },
-    {
-      "from": "28G5.OtRC",
-      "to": "28G5.vnEQ",
-      "type": "blocks"
-    },
-    {
-      "from": "28G5.k5Ih",
-      "to": "28G5.voaG",
-      "type": "blocks"
-    },
     {
       "from": "28G5.voaG",
       "to": "28G5.8M8I",

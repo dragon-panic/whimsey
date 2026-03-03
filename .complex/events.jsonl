@@ -32,3 +32,13 @@
 {"ts":"2026-03-03T16:07:44.583870883+00:00","action":"surface","node_id":"28G5.Qw0l.iFTj","reason":"parent Qw0l claimed"}
 {"ts":"2026-03-03T16:07:44.585009689+00:00","action":"surface","node_id":"28G5.Qw0l.Ph1h","reason":"parent Qw0l claimed"}
 {"ts":"2026-03-03T16:07:44.586093387+00:00","action":"surface","node_id":"28G5.Qw0l.VTct","reason":"parent Qw0l claimed"}
+{"ts":"2026-03-03T16:13:28.653815569+00:00","action":"integrate","node_id":"28G5.OtRC","reason":"en.json populated with all UI strings"}
+{"ts":"2026-03-03T16:13:28.655154952+00:00","action":"integrate","node_id":"28G5.k5Ih","reason":"router restructured, build passes"}
+{"ts":"2026-03-03T16:13:28.656495928+00:00","action":"claim","node_id":"28G5.Qw0l.k3sx","part":"claude"}
+{"ts":"2026-03-03T16:13:28.657701936+00:00","action":"integrate","node_id":"28G5.Qw0l.k3sx","reason":"astrology.js translated"}
+{"ts":"2026-03-03T16:13:28.659019462+00:00","action":"claim","node_id":"28G5.Qw0l.iFTj","part":"claude"}
+{"ts":"2026-03-03T16:13:28.660270466+00:00","action":"integrate","node_id":"28G5.Qw0l.iFTj","reason":"planets.js translated"}
+{"ts":"2026-03-03T16:13:28.661273042+00:00","action":"claim","node_id":"28G5.Qw0l.VTct","part":"claude"}
+{"ts":"2026-03-03T16:13:28.662518567+00:00","action":"integrate","node_id":"28G5.Qw0l.VTct","reason":"court.js translated"}
+{"ts":"2026-03-03T16:13:39.073986352+00:00","action":"claim","node_id":"28G5.Qw0l.Ph1h","part":"claude"}
+{"ts":"2026-03-03T16:13:39.075284838+00:00","action":"integrate","node_id":"28G5.Qw0l.Ph1h","reason":"signs.js translated"}
