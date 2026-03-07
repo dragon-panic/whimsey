@@ -7,12 +7,14 @@ import * as astrologyEn from '../utils/astrology';
 import * as planetsEn from '../utils/planets';
 import * as signsEn from '../utils/signs';
 import * as courtEn from '../utils/court';
+import * as mbtiEn from '../utils/mbti';
 
 import * as cardsEs from './content/es/cards';
 import * as astrologyEs from './content/es/astrology';
 import * as planetsEs from './content/es/planets';
 import * as signsEs from './content/es/signs';
 import * as courtEs from './content/es/court';
+import * as mbtiEs from './content/es/mbti';
 
 const content = {
   en: {
@@ -21,6 +23,7 @@ const content = {
     planets: planetsEn,
     signs: signsEn,
     court: courtEn,
+    mbti: mbtiEn,
   },
   es: {
     cards: cardsEs,
@@ -28,6 +31,7 @@ const content = {
     planets: planetsEs,
     signs: signsEs,
     court: courtEs,
+    mbti: mbtiEs,
   },
 };
 
@@ -58,4 +62,9 @@ export function useSigns() {
 export function useCourt() {
   const locale = useLocale();
   return getContent(locale, 'court');
+}
+
+export function useMbti() {
+  const locale = useLocale();
+  return getContent(locale, 'mbti');
 }

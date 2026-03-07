@@ -40,6 +40,7 @@ export const courtCardData = {
   'king-of-wands': {
     suit: 'Wands',
     rank: 'king',
+    mbti: 'ENTJ',
     title: 'Señor de la Llama y el Relámpago',
     description: 'El Rey de Bastos es Fuego de Fuego — el arquetipo puro del liderazgo inspirado y la voluntad creativa. Es el emprendedor, el visionario y el líder nato que actúa desde la convicción en lugar del cálculo. Su autoridad no proviene de una posición sino de un fuego interior que otros se sienten impulsados a seguir. Es audaz, magnánimo y a veces imprudente en la persecución de sus grandes designios.',
     jungian: 'Representa el principio masculino plenamente individuado operando a través de la Voluntad — el Sí Mismo expresado como autoridad creativa. Psicológicamente, esta figura encarna la integración del animus en su forma más imponente, donde la visión personal se alinea con el propósito arquetípico. La sombra es la tiranía, donde el impulso de dominio eclipsa la empatía.',
@@ -53,6 +54,7 @@ export const courtCardData = {
   'queen-of-wands': {
     suit: 'Wands',
     rank: 'queen',
+    mbti: 'ENFJ',
     title: 'Reina de los Tronos de la Llama',
     description: 'La Reina de Bastos es Agua de Fuego — sentimiento apasionado canalizado en un magnetismo personal radiante. Es la reina del girasol, cálida y segura de sí misma, que atrae a otros simplemente por ser plenamente ella misma. Creativa, leal y ferozmente independiente, sabe lo que quiere y lo persigue con calidez en lugar de fuerza. Su autoridad se gana a través de una presencia genuina y una vitalidad innegable.',
     jungian: 'Encarna el arquetipo del ánima completamente a gusto en el mundo — el principio femenino expresado a través de la confianza creativa en lugar de la receptividad. Es el sí mismo individuado que no necesita validación externa. Su sombra es la vanidad y la posesividad, un fuego que abrasa lo que dice amar.',
@@ -66,6 +68,7 @@ export const courtCardData = {
   'knight-of-wands': {
     suit: 'Wands',
     rank: 'knight',
+    mbti: 'INTJ',
     title: 'Señor de los Vientos y las Brisas',
     description: 'El Caballero de Bastos es Aire de Fuego — el aventurero mercurial que se lanza hacia cada horizonte con un entusiasmo contagioso. Es la búsqueda eterna personificada: inquieto, audaz e imposible de atrapar. Su energía es explosiva y creativa, capaz de encender movimientos enteros con un solo discurso apasionado. El desafío es la perseverancia; a menudo se ha ido antes de que el fuego que inició sea atendido.',
     jungian: 'El arquetipo del puer aeternus — el joven eterno que rechaza la limitación y el compromiso. Psicológicamente, representa el impulso creativo antes de que haya sido disciplinado por la necesidad del ego de completar las cosas. Integrar esta figura significa encontrar formas de sostener el fuego sin perder la chispa.',
@@ -79,6 +82,7 @@ export const courtCardData = {
   'page-of-wands': {
     suit: 'Wands',
     rank: 'page',
+    mbti: 'INFJ',
     title: 'Princesa de la Llama Resplandeciente',
     description: 'El Paje de Bastos es Tierra de Fuego — el potencial creativo en su estado más fértil e informe. Es la chispa antes de convertirse en llama, la idea antes de convertirse en proyecto. Entusiasta, curiosa y audazmente experimental, se acerca al mundo como un enorme patio de juegos creativo. Los mensajes de inspiración, la emoción repentina por una nueva dirección y los emocionantes primeros días de una empresa creativa le pertenecen.',
     jungian: 'Representa la etapa más temprana de la individuación creativa — el Sí Mismo naciente comenzando a avivar su propio fuego. Psicológicamente, es el niño interior que aún no ha aprendido a censurar su entusiasmo. Su sombra es la energía dispersa y la incapacidad de comprometerse.',
@@ -94,6 +98,7 @@ export const courtCardData = {
   'king-of-cups': {
     suit: 'Cups',
     rank: 'king',
+    mbti: 'ESTP',
     title: 'Señor de las Olas y las Aguas',
     description: 'El Rey de Copas es Fuego de Agua — voluntad y autoridad expresadas a través del dominio emocional y la comprensión compasiva. Gobierna el reino del sentimiento sin ser arrastrado por él. Consejero, sanador o guía espiritual, sostiene el espacio para las profundidades de la experiencia humana mientras permanece centrado y cálido. Su poder proviene de haber navegado su propio inframundo emocional y haber regresado con una sabiduría duramente ganada.',
     jungian: 'El arquetipo del Viejo Sabio o el sanador sanado — la sombra integrada, las profundidades exploradas, el ánima comprendida. Ha realizado el trabajo interior y ahora sostiene el contenedor para otros. La sombra es la manipulación emocional, usando la empatía como palanca.',
@@ -107,6 +112,7 @@ export const courtCardData = {
   'queen-of-cups': {
     suit: 'Cups',
     rank: 'queen',
+    mbti: 'ESFP',
     title: 'Reina de los Tronos del Agua',
     description: 'La Reina de Copas es Agua de Agua — receptividad emocional pura y profundidad psíquica. Es el espejo del alma, capaz de reflejar lo que otros más necesitan ver. Intuitiva, empática y profundamente interior, vive en las tierras fronterizas entre lo visto y lo no visto. Su don es una cualidad de presencia que hace que otros se sientan verdaderamente conocidos. El desafío es mantener sus propios límites en medio del flujo constante de sentimiento.',
     jungian: 'El ánima en su forma más completa — lo inconsciente hecho consciente, la función del sentimiento plenamente desarrollada. Es el principio femenino interior que conecta al ego con el Sí Mismo a través del medio de la emoción y la imagen. Su sombra es la disolución del yo al servicio de los demás.',
@@ -120,6 +126,7 @@ export const courtCardData = {
   'knight-of-cups': {
     suit: 'Cups',
     rank: 'knight',
+    mbti: 'ISTP',
     title: 'Señor de las Olas y las Aguas',
     description: 'El Caballero de Copas es Aire de Agua — idealismo romántico elevado por la imaginación poética. Es el trovador, el caballero místico, el soñador que sigue su corazón a través de distancias imposibles. Sus ofertas de amor y belleza son genuinas, pero pueden evaporarse cuando la realidad exige practicidad. Es la invitación a algo trascendente, siempre llegando con un mensaje del reino del ideal.',
     jungian: 'La proyección del animus romántico en su forma más seductora — la figura sobre la cual se depositan todos los anhelos de trascendencia y amor perfecto. Psicológicamente, encontrar este arquetipo pregunta si uno está enamorado del ideal o de la persona real que tiene delante.',
@@ -133,6 +140,7 @@ export const courtCardData = {
   'page-of-cups': {
     suit: 'Cups',
     rank: 'page',
+    mbti: 'ISFP',
     title: 'Princesa de las Aguas',
     description: 'El Paje de Copas es Tierra de Agua — sensibilidad emocional en su forma más abierta e indefensa. Es la niña soñadora que escucha al pez hablar desde la copa, que encuentra magia en encuentros inesperados. Psíquica, tierna e imaginativamente viva, trae mensajes del inconsciente en forma de sincronicidades, sueños y destellos repentinos de inspiración. Su don es la capacidad de recibir lo que otros ya han dejado de escuchar.',
     jungian: 'El ánima en su manifestación más temprana e informe — la imagen del alma antes de que haya sido moldeada por el encuentro con el mundo. Representa la receptividad prístina del inconsciente, capaz de una percepción extraordinaria precisamente porque no lleva armadura.',
@@ -148,6 +156,7 @@ export const courtCardData = {
   'king-of-swords': {
     suit: 'Swords',
     rank: 'king',
+    mbti: 'ENTP',
     title: 'Señor del Viento y las Brisas',
     description: 'El Rey de Espadas es Fuego de Aire — inteligencia feroz al mando de un juicio claro y autoritario. Es el arquetipo del juez, el comandante, el genio analítico que corta la confusión con precisión y coraje intelectual. Su mente opera a gran velocidad, viendo a través del engaño y sosteniendo sistemas complejos simultáneamente. Exige claridad, espera franqueza y tiene poca paciencia con el razonamiento emocional en lugar de la evidencia racional.',
     jungian: 'La función del pensamiento plenamente desarrollada — el logos en su expresión más austera. Representa la capacidad del ego para el autoexamen lúcido y el coraje de seguir la razón hasta conclusiones ante las que otros retroceden. La sombra es la crueldad intelectual, donde la precisión se convierte en desapego armado.',
@@ -161,6 +170,7 @@ export const courtCardData = {
   'queen-of-swords': {
     suit: 'Swords',
     rank: 'queen',
+    mbti: 'ENFP',
     title: 'Reina de los Tronos del Aire',
     description: 'La Reina de Espadas es Agua de Aire — sentimiento profundo procesado a través de una claridad mental cristalina. Ha conocido el duelo, la pérdida y los bordes afilados de la experiencia, y de estos ha forjado una inteligencia de perspicacia devastadora. Ve a través de la pretensión sin esfuerzo, se comunica con honestidad precisa y mantiene sus límites con firmeza serena. Su aparente frialdad no es ausencia de sentimiento sino la disciplina de alguien que ha aprendido lo que cuesta la claridad.',
     jungian: 'La integración de las funciones del pensamiento y el sentimiento — una figura que ha atravesado las aguas del duelo y ha emergido con una mente que es tanto aguda como profunda. Representa la sabiduría que viene solo a través de la experiencia de la pérdida. Su sombra es la amargura: la claridad cuajada en desprecio.',
@@ -174,6 +184,7 @@ export const courtCardData = {
   'knight-of-swords': {
     suit: 'Swords',
     rank: 'knight',
+    mbti: 'INTP',
     title: 'Señor del Viento y las Tormentas',
     description: 'El Caballero de Espadas es Aire de Aire — fuerza mental pura moviéndose a máxima velocidad. Es la tormenta del intelecto: brillante, imparable y a menudo indiferente a lo que destruye en su carrera hacia la verdad. Un argumento nunca está resuelto hasta que cada debilidad ha sido expuesta. Se lanza a cada debate intelectual con compromiso total, y sus ideas, correctas o no, llegan con la fuerza de una convicción absoluta. Es el arquetipo del cruzado de principios y del fanático en igual medida.',
     jungian: 'La función del pensamiento en su forma más intemperada — el animus plenamente identificado con el principio abstracto a expensas de la realidad encarnada. Representa la capacidad de la psique para la convicción absoluta, que puede ser liberadora o catastrófica dependiendo de si la convicción es merecida.',
@@ -187,6 +198,7 @@ export const courtCardData = {
   'page-of-swords': {
     suit: 'Swords',
     rank: 'page',
+    mbti: 'INFP',
     title: 'Princesa de los Vientos Impetuosos',
     description: 'El Paje de Espadas es Tierra de Aire — curiosidad intelectual en su forma más inquieta y alerta. Está observando, escuchando, analizando, reuniendo información antes de comprometerse con cualquier posición. Astuta, rápida y ligeramente suspicaz de los motivos de todos, es la joven espía, la estudiante que cuestiona todo, la mente que aún no ha encontrado su causa pero está lista para desenvainar en cualquier momento. Las noticias inesperadas, la vigilancia y las primeras etapas de aprender a pensar críticamente le pertenecen.',
     jungian: 'Las primeras etapas de diferenciación de la función del pensamiento — el intelecto naciente probando sus bordes contra el mundo. Una vigilancia necesaria que precede a la confianza. Su sombra es la paranoia: el estado de alerta que no puede apagarse.',
@@ -202,6 +214,7 @@ export const courtCardData = {
   'king-of-pentacles': {
     suit: 'Pentacles',
     rank: 'king',
+    mbti: 'ESTJ',
     title: 'Señor de la Tierra Salvaje y Fértil',
     description: 'El Rey de Oros es Fuego de Tierra — dominio sobre el mundo material, la voluntad que ha transformado el esfuerzo en abundancia duradera. Es el patriarca de la riqueza y la sabiduría práctica: metódico, generoso y absolutamente fiable. Habiendo construido algo perdurable a partir del trabajo paciente, ahora gobierna con la autoridad serena de quien conoce la tierra completamente. Valora lo que perdura sobre lo que impresiona, y su generosidad está enraizada en una suficiencia genuina.',
     jungian: 'El arquetipo del padre plenamente encarnado en el reino material — el ego que ha negociado exitosamente con la realidad y ha llegado a una seguridad genuina en lugar de una acumulación compensatoria. La sombra es la avaricia: el miedo a que la tierra vuelva a fallar, acaparando contra una escasez imaginada.',
@@ -215,6 +228,7 @@ export const courtCardData = {
   'queen-of-pentacles': {
     suit: 'Pentacles',
     rank: 'queen',
+    mbti: 'ESFJ',
     title: 'Reina de los Tronos de la Tierra',
     description: 'La Reina de Oros es Agua de Tierra — abundancia sensual y nutricia en su forma más plenamente encarnada. Es la gran madre de la vida material: cuida cuerpos, cultiva la tierra, gestiona hogares y crea las condiciones en las que todo y todos los que le importan pueden prosperar. Práctica, sensorial, profundamente presente en el mundo físico, encuentra lo sagrado en lo ordinario — en la comida, en el tacto, en la organización cuidadosa de la realidad material hacia un florecimiento sostenible.',
     jungian: 'El arquetipo de la Gran Madre en su forma más benevolente y terrenal — el ánima plenamente encarnada en la materia. Representa la capacidad de la psique para encontrar significado y placer en la existencia encarnada en lugar de la trascendencia. Su sombra es la sobreprotección posesiva: asfixiar en nombre del cuidado.',
@@ -228,6 +242,7 @@ export const courtCardData = {
   'knight-of-pentacles': {
     suit: 'Pentacles',
     rank: 'knight',
+    mbti: 'ISTJ',
     title: 'Señor de la Tierra Amplia y Fértil',
     description: 'El Caballero de Oros es Aire de Tierra — inteligencia metódica aplicada al trabajo paciente de construir. Es el trabajador diligente, el artesano cuidadoso, el planificador confiable que no se dejará apresurar. Mientras otros caballeros cargan temerariamente hacia adelante, él inspecciona el terreno, examina el suelo y luego procede paso a paso deliberado. Puede carecer del brío de sus compañeros, pero el trabajo que completa se hace con absoluta minuciosidad. Lo que construye, perdura.',
     jungian: 'La función del pensamiento enraizada en la sensación — el intelecto que respeta en lugar de trascender lo físico. Representa la capacidad de esfuerzo sostenido: la función psicológica que puede diferir la gratificación indefinidamente al servicio de un objetivo a largo plazo. La sombra es el estancamiento: la paciencia endurecida en negativa a cambiar.',
@@ -241,6 +256,7 @@ export const courtCardData = {
   'page-of-pentacles': {
     suit: 'Pentacles',
     rank: 'page',
+    mbti: 'ISFJ',
     title: 'Princesa de las Colinas Resonantes',
     description: 'El Paje de Oros es Tierra de Tierra — la esencia concentrada del potencial material, quieta y estudiosa. Sostiene su moneda a la luz no para presumir sino para comprenderla verdaderamente. Es la estudiante dedicada, la joven aprendiz, la investigadora cuidadosa que quiere aprender el oficio correctamente antes de intentar la maestría. Práctica, enraizada y genuinamente curiosa sobre cómo funciona el mundo físico, representa los primeros pasos cuidadosos hacia la competencia material.',
     jungian: 'La etapa más temprana del encuentro del ego con la realidad material — el yo aprendiendo que el mundo tiene su propia lógica que debe ser respetada antes de poder trabajar con ella. Es la psique descubriendo la disciplina del oficio.',

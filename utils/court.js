@@ -40,6 +40,7 @@ export const courtCardData = {
   'king-of-wands': {
     suit: 'Wands',
     rank: 'king',
+    mbti: 'ENTJ',
     title: 'Lord of the Flame and Lightning',
     description: 'The King of Wands is Fire of Fire — the pure archetype of inspired leadership and creative will. He is the entrepreneur, the visionary, and the natural born leader who acts from conviction rather than calculation. His authority comes not from position but from an inner fire that others feel compelled to follow. He is bold, magnanimous, and sometimes reckless in the pursuit of his grand designs.',
     jungian: 'Represents the fully individuated masculine principle operating through the Will — the Self expressed as creative authority. Psychologically, this figure embodies the integration of the animus at its most commanding, where personal vision aligns with archetypal purpose. The shadow is tyranny, where the drive for dominion eclipses empathy.',
@@ -53,6 +54,7 @@ export const courtCardData = {
   'queen-of-wands': {
     suit: 'Wands',
     rank: 'queen',
+    mbti: 'ENFJ',
     title: 'Queen of the Thrones of Flame',
     description: 'The Queen of Wands is Water of Fire — passionate feeling channelled into radiant personal magnetism. She is the sunflower queen, warm and self-assured, who draws others to her simply by being fully herself. Creative, loyal, and fiercely independent, she knows what she wants and pursues it with warmth rather than force. Her authority is earned through genuine presence and undeniable vitality.',
     jungian: 'Embodies the anima archetype fully at home in the world — the feminine principle expressed through creative confidence rather than receptivity. She is the individuated self who needs no external validation. Her shadow is vanity and possessiveness, a fire that scorches what it claims to love.',
@@ -66,6 +68,7 @@ export const courtCardData = {
   'knight-of-wands': {
     suit: 'Wands',
     rank: 'knight',
+    mbti: 'INTJ',
     title: 'Lord of the Winds and Breezes',
     description: 'The Knight of Wands is Air of Fire — the mercurial adventurer who charges into every horizon with infectious enthusiasm. He is the eternal quest personified: restless, daring, and impossible to pin down. His energy is explosive and creative, capable of igniting entire movements with a single passionate speech. The challenge is follow-through; he is often gone before the fire he started is tended.',
     jungian: 'The puer aeternus archetype — the eternal youth who refuses limitation and commitment. Psychologically, he represents the creative impulse before it has been disciplined by the ego\'s need for completion. Integrating this figure means finding ways to sustain the fire without losing the spark.',
@@ -79,6 +82,7 @@ export const courtCardData = {
   'page-of-wands': {
     suit: 'Wands',
     rank: 'page',
+    mbti: 'INFJ',
     title: 'Princess of the Shining Flame',
     description: 'The Page of Wands is Earth of Fire — creative potential in its most fertile, unformed state. She is the spark before it becomes a flame, the idea before it becomes a project. Enthusiastic, curious, and fearlessly experimental, she approaches the world as one enormous creative playground. Messages of inspiration, sudden excitement about a new direction, and the thrilling first days of a creative venture all belong to her.',
     jungian: 'Represents the earliest stage of creative individuation — the nascent Self beginning to stoke its own fire. Psychologically, this is the inner child who has not yet learned to censor its enthusiasm. Her shadow is scattered energy and the inability to commit.',
@@ -94,6 +98,7 @@ export const courtCardData = {
   'king-of-cups': {
     suit: 'Cups',
     rank: 'king',
+    mbti: 'ESTP',
     title: 'Lord of the Waves and Waters',
     description: 'The King of Cups is Fire of Water — will and authority expressed through emotional mastery and compassionate understanding. He governs the realm of feeling without being swept away by it. A counsellor, healer, or spiritual guide, he holds space for the depths of human experience while remaining centred and warm. His power comes from having navigated his own emotional underworld and returned with hard-won wisdom.',
     jungian: 'The archetype of the Wise Old Man or the healed healer — the shadow integrated, the depths explored, the anima understood. He has done the inner work and now holds the container for others. The shadow is emotional manipulation, using empathy as leverage.',
@@ -107,6 +112,7 @@ export const courtCardData = {
   'queen-of-cups': {
     suit: 'Cups',
     rank: 'queen',
+    mbti: 'ESFP',
     title: 'Queen of the Thrones of Water',
     description: 'The Queen of Cups is Water of Water — pure emotional receptivity and psychic depth. She is the mirror of the soul, capable of reflecting back what others most need to see. Intuitive, empathic, and profoundly interior, she lives in the borderlands between the seen and unseen. Her gift is a quality of presence that makes others feel truly known. The challenge is maintaining her own boundaries amid the constant flow of feeling.',
     jungian: 'The anima in her most complete form — the unconscious made conscious, the feeling function fully developed. She is the inner feminine principle that connects ego to Self through the medium of emotion and image. Her shadow is dissolution of the self in service to others.',
@@ -120,6 +126,7 @@ export const courtCardData = {
   'knight-of-cups': {
     suit: 'Cups',
     rank: 'knight',
+    mbti: 'ISTP',
     title: 'Lord of the Waves and the Waters',
     description: 'The Knight of Cups is Air of Water — romantic idealism borne aloft on poetic imagination. He is the troubadour, the mystic knight, the dreamer who follows his heart across impossible distances. His offers of love and beauty are genuine, but they may evaporate when reality demands practicality. He is the invitation to something transcendent, always arriving with a message from the realm of the ideal.',
     jungian: 'The romantic animus projection at its most seductive — the figure onto whom one casts all longings for transcendence and perfect love. Psychologically, encountering this archetype asks whether one is in love with the ideal or the actual person before them.',
@@ -133,6 +140,7 @@ export const courtCardData = {
   'page-of-cups': {
     suit: 'Cups',
     rank: 'page',
+    mbti: 'ISFP',
     title: 'Princess of the Waters',
     description: 'The Page of Cups is Earth of Water — emotional sensitivity in its most open, undefended form. She is the dreaming child who hears the fish speaking from the cup, who finds magic in unexpected encounters. Psychic, tender, and imaginatively alive, she brings messages from the unconscious in the form of synchronicities, dreams, and sudden flashes of inspiration. Her gift is the ability to receive what others have already stopped listening for.',
     jungian: 'The anima in her earliest, most unformed manifestation — the soul-image before it has been shaped by encounter with the world. She represents the pristine receptivity of the unconscious, capable of extraordinary perception precisely because she carries no armour.',
@@ -148,6 +156,7 @@ export const courtCardData = {
   'king-of-swords': {
     suit: 'Swords',
     rank: 'king',
+    mbti: 'ENTP',
     title: 'Lord of the Wind and the Breezes',
     description: 'The King of Swords is Fire of Air — fierce intelligence commanding clear, authoritative judgement. He is the archetype of the judge, the commander, the analytical genius who cuts through confusion with precision and intellectual courage. His mind operates at speed, seeing through deception and holding complex systems simultaneously. He demands clarity, expects directness, and has little patience for emotional reasoning in place of rational evidence.',
     jungian: 'The fully developed thinking function — logos in its most austere expression. Represents the ego\'s capacity for clear-eyed self-examination and the courage to follow reason to conclusions others flinch from. The shadow is intellectual cruelty, where precision becomes weaponised detachment.',
@@ -161,6 +170,7 @@ export const courtCardData = {
   'queen-of-swords': {
     suit: 'Swords',
     rank: 'queen',
+    mbti: 'ENFP',
     title: 'Queen of the Thrones of Air',
     description: 'The Queen of Swords is Water of Air — deep feeling processed through crystalline clarity of mind. She has known grief, loss, and the sharp edges of experience, and from these she has forged an intelligence of devastating perceptiveness. She sees through pretence without effort, communicates with precise honesty, and holds her boundaries with calm firmness. Her apparent coldness is not absence of feeling but the discipline of someone who has learned what clarity costs.',
     jungian: 'The integration of the thinking and feeling functions — a figure who has passed through the waters of grief and emerged with a mind that is both sharp and deep. She represents the wisdom that comes only through experience of loss. Her shadow is bitterness: clarity curdled into contempt.',
@@ -174,6 +184,7 @@ export const courtCardData = {
   'knight-of-swords': {
     suit: 'Swords',
     rank: 'knight',
+    mbti: 'INTP',
     title: 'Lord of the Wind and the Storms',
     description: 'The Knight of Swords is Air of Air — pure mental force moving at maximum velocity. He is the storm of intellect: brilliant, unstoppable, and often heedless of what he destroys in his rush toward truth. An argument is never settled until every weakness has been exposed. He charges into every intellectual debate with complete commitment, and his ideas, right or wrong, arrive with the force of absolute conviction. He is the archetype of the principled crusader and the fanatic in equal measure.',
     jungian: 'The thinking function at its most untempered — the animus fully identified with abstract principle at the expense of embodied reality. He represents the psyche\'s capacity for absolute conviction, which can be liberating or catastrophic depending on whether the conviction is earned.',
@@ -187,6 +198,7 @@ export const courtCardData = {
   'page-of-swords': {
     suit: 'Swords',
     rank: 'page',
+    mbti: 'INFP',
     title: 'Princess of the Rushing Winds',
     description: 'The Page of Swords is Earth of Air — intellectual curiosity in its most restless, alert form. She is watching, listening, analysing, gathering information before committing to any position. Clever, quick, and slightly suspicious of everyone\'s motives, she is the young spy, the student who questions everything, the mind that has not yet found its cause but is ready to draw at a moment\'s notice. Unexpected news, surveillance, and the early stages of learning to think critically all belong to her.',
     jungian: 'The early stages of differentiation of the thinking function — the nascent intellect testing its edges against the world. A necessary vigilance that precedes trust. Her shadow is paranoia: alertness that cannot switch off.',
@@ -202,6 +214,7 @@ export const courtCardData = {
   'king-of-pentacles': {
     suit: 'Pentacles',
     rank: 'king',
+    mbti: 'ESTJ',
     title: 'Lord of the Wild and Fertile Land',
     description: 'The King of Pentacles is Fire of Earth — mastery over the material world, the will that has transformed effort into enduring abundance. He is the patriarch of wealth and practical wisdom: methodical, generous, and utterly reliable. Having built something lasting from patient labour, he now rules with the calm authority of someone who knows the land completely. He values what endures over what impresses, and his generosity is grounded in genuine sufficiency.',
     jungian: 'The father archetype fully embodied in the material realm — the ego that has successfully negotiated with reality and arrived at genuine security rather than compensatory accumulation. The shadow is miserliness: the fear that the land will fail again, hoarding against an imagined scarcity.',
@@ -215,6 +228,7 @@ export const courtCardData = {
   'queen-of-pentacles': {
     suit: 'Pentacles',
     rank: 'queen',
+    mbti: 'ESFJ',
     title: 'Queen of the Thrones of Earth',
     description: 'The Queen of Pentacles is Water of Earth — sensuous, nurturing abundance in its most fully embodied form. She is the great mother of material life: she tends bodies, cultivates soil, manages households, and creates the conditions in which everything and everyone she cares for can thrive. Practical, sensory, deeply present in the physical world, she finds the sacred in the ordinary — in food, in touch, in the careful organisation of material reality into sustainable flourishing.',
     jungian: 'The Great Mother archetype in her most benevolent and earthy form — the anima fully incarnated in matter. She represents the psyche\'s capacity to find meaning and pleasure in embodied existence rather than transcendence. Her shadow is possessive over-protection: smothering in the name of care.',
@@ -228,6 +242,7 @@ export const courtCardData = {
   'knight-of-pentacles': {
     suit: 'Pentacles',
     rank: 'knight',
+    mbti: 'ISTJ',
     title: 'Lord of the Wide and Fertile Land',
     description: 'The Knight of Pentacles is Air of Earth — methodical intelligence applied to the patient work of building. He is the diligent labourer, the careful craftsman, the dependable planner who will not be rushed. While other knights charge recklessly ahead, he surveys the territory, checks the soil, and then proceeds step by deliberate step. He may lack the dash of his companions, but the work he completes is done with absolute thoroughness. What he builds, lasts.',
     jungian: 'The thinking function grounded in sensation — intellect that respects rather than transcends the physical. Represents the capacity for sustained effort: the psychological function that can defer gratification indefinitely in service of a long-term goal. The shadow is stagnation: patience hardened into refusal to change.',
@@ -241,6 +256,7 @@ export const courtCardData = {
   'page-of-pentacles': {
     suit: 'Pentacles',
     rank: 'page',
+    mbti: 'ISFJ',
     title: 'Princess of the Echoing Hills',
     description: 'The Page of Pentacles is Earth of Earth — the concentrated essence of material potential, still and studious. She holds her coin up to the light not to show it off but to truly understand it. She is the dedicated student, the young apprentice, the careful researcher who wants to learn the craft properly before attempting mastery. Practical, grounded, and genuinely curious about how the physical world works, she represents the first careful steps toward material competence.',
     jungian: 'The earliest stage of the ego\'s encounter with material reality — the self learning that the world has its own logic that must be respected before it can be worked with. She is the psyche discovering the discipline of craft.',

@@ -68,3 +68,18 @@
 {"ts":"2026-03-03T16:21:27.580879949+00:00","action":"surface","node_id":"28G5"}
 {"ts":"2026-03-03T16:21:27.582107294+00:00","action":"claim","node_id":"28G5","part":"claude"}
 {"ts":"2026-03-03T16:21:27.583258947+00:00","action":"integrate","node_id":"28G5"}
+{"ts":"2026-03-07T21:19:45.122852891+00:00","action":"create","node_id":"kTbp.ZUS1","detail":"Add Spanish translations for MBTI data"}
+{"ts":"2026-03-07T21:20:17.441787031+00:00","action":"create","node_id":"kTbp.QqhH","detail":"Display MBTI info in court card UI component"}
+{"ts":"2026-03-07T21:33:30.540794016+00:00","action":"surface","node_id":"kTbp.5xkJ"}
+{"ts":"2026-03-07T21:33:30.540837795+00:00","action":"surface","node_id":"kTbp.lQ1L"}
+{"ts":"2026-03-07T21:33:58.044647493+00:00","action":"claim","node_id":"kTbp.5xkJ","part":"claude"}
+{"ts":"2026-03-07T21:33:58.046153235+00:00","action":"claim","node_id":"kTbp.lQ1L","part":"claude"}
+{"ts":"2026-03-07T21:41:47.256991176+00:00","action":"integrate","node_id":"kTbp.5xkJ","reason":"Added mbti field to all 16 court cards in utils/court.js"}
+{"ts":"2026-03-07T21:41:47.258375034+00:00","action":"integrate","node_id":"kTbp.lQ1L","reason":"Created utils/mbti.js with all 16 MBTI types, cognitive stacks, descriptions, court bridges, and mbtiForCard helper"}
+{"ts":"2026-03-07T21:41:55.754551700+00:00","action":"surface","node_id":"kTbp.ZUS1"}
+{"ts":"2026-03-07T21:42:14.593460542+00:00","action":"claim","node_id":"kTbp.ZUS1","part":"claude"}
+{"ts":"2026-03-07T21:43:44.040138479+00:00","action":"integrate","node_id":"kTbp.ZUS1","reason":"Added mbti fields to es/court.js and created es/mbti.js with full Spanish translations"}
+{"ts":"2026-03-07T21:43:44.041201805+00:00","action":"surface","node_id":"kTbp.QqhH"}
+{"ts":"2026-03-07T21:46:53.846030350+00:00","action":"claim","node_id":"kTbp.QqhH","part":"claude"}
+{"ts":"2026-03-07T22:36:48.261129158+00:00","action":"integrate","node_id":"kTbp.QqhH","reason":"Added MBTI display to court card UI — useMbti hook, UI labels in both locales, info box with type/stack/bridge"}
+{"ts":"2026-03-07T22:36:53.313716564+00:00","action":"integrate","node_id":"kTbp","reason":"All subtasks complete — MBTI types added to court cards with data, translations, and UI"}

@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useDeck } from '../../contexts/DeckContext';
 import styles from '../../tarot-sprites.module.scss';
 import { useT } from '../../../i18n/useTranslations';
-import { useCourt, useAstrology } from '../../../i18n/useContent';
+import { useCourt, useAstrology, useMbti } from '../../../i18n/useContent';
 
 const elementStyles = {
   'Fire': {
@@ -61,6 +61,7 @@ export default function CourtPage() {
   const t = useT();
   const { courtCardData, rankNames, rankElements, rankDescriptions, suitElements, suitOrder, rankOrder } = useCourt();
   const { elements } = useAstrology();
+  const { mbtiTypes } = useMbti();
   const [selectedKey, setSelectedKey] = useState(null);
   const cardDescriptionRef = useRef(null);
 
@@ -159,6 +160,7 @@ export default function CourtPage() {
                     {rankOrder.map(rank => {
                       const key = `${rank}-of-${suit.toLowerCase()}`;
                       const isSelected = selectedKey === key;
+                      const cardMbti = courtCardData[key]?.mbti;
                       const displayName = `${rankNames[deck][rank]} of ${suit}`;
                       const subtext = `${rankElements[rank].toLowerCase()} of ${el.toLowerCase()}`;
                       return (
@@ -174,11 +176,18 @@ export default function CourtPage() {
                           {isSelected && (
                             <div className={`absolute -inset-0.5 ${style.glowBg} rounded-lg blur-sm -z-10`} />
                           )}
-                          <div className="flex flex-col">
-                            <div className="font-medium text-sm">{displayName}</div>
-                            <div className={`text-xs ${isSelected ? 'opacity-80' : 'opacity-60'}`}>
-                              {subtext}
+                          <div className="flex items-center justify-between">
+                            <div className="flex flex-col">
+                              <div className="font-medium text-sm">{displayName}</div>
+                              <div className={`text-xs ${isSelected ? 'opacity-80' : 'opacity-60'}`}>
+                                {subtext}
+                              </div>
                             </div>
+                            {cardMbti && (
+                              <span className={`text-xs font-mono font-semibold ${isSelected ? 'opacity-90' : 'opacity-50'}`}>
+                                {cardMbti}
+                              </span>
+                            )}
                           </div>
                         </button>
                       );
@@ -314,6 +323,22 @@ export default function CourtPage() {
                       {rankEl === 'Earth' && ' the grounding, material aspect holding the suit\'s force in latent potential, ready to be cultivated into form.'}
                     </p>
                   </div>
+
+                  {cardData.mbti && mbtiTypes[cardData.mbti] && (
+                    <div className={`info-box rounded-xl p-6 border-2 ${es.borderColor}`}>
+                      <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.mbtiType}</p>
+                      <p className="text-2xl font-bold mt-2">
+                        {cardData.mbti} <span className="text-base font-normal opacity-70">— {mbtiTypes[cardData.mbti].name}</span>
+                      </p>
+                      <p className="text-sm mt-1 opacity-60">{mbtiTypes[cardData.mbti].description}</p>
+                      <p className="text-sm uppercase tracking-wider opacity-70 mt-4">{t.labels?.cognitiveStack}</p>
+                      <p className="text-lg font-medium mt-1 tracking-wide">
+                        {mbtiTypes[cardData.mbti].stack.join(' → ')}
+                      </p>
+                      <p className="text-sm uppercase tracking-wider opacity-70 mt-4">{t.labels?.mbtiCourtBridge}</p>
+                      <p className="text-sm mt-1 opacity-80 leading-snug">{mbtiTypes[cardData.mbti].courtBridge}</p>
+                    </div>
+                  )}
                 </div>
 
               </div>
