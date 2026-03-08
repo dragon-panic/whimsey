@@ -56,6 +56,7 @@
   "courtPage": {
     "subtitle": "Court Cards",
     "description": "The sixteen court cards represent the elemental aspects of each suit as embodied in human archetypes. Each is both Fire, Water, Air, or Earth <em>of</em> their suit's element — a specific facet of a greater elemental whole.",
+    "of": "of",
     "rankSuit": "{rank} rank · {suit} suit",
     "elementOfElement": "As {rankEl} of {suitEl}, this figure embodies the {rankElLower} quality applied to the {suitElLower} realm —",
     "fireRankDescription": "the active, projective will driving the suit's force forward with authority and initiative.",

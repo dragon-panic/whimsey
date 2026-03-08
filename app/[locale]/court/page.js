@@ -59,7 +59,7 @@ const suitSymbols = {
 export default function CourtPage() {
   const { deck } = useDeck();
   const t = useT();
-  const { courtCardData, rankNames, rankElements, rankDescriptions, suitElements, suitOrder, rankOrder } = useCourt();
+  const { courtCardData, rankNames, rankElements, rankDescriptions, suitElements, suitOrder, rankOrder, suitNames, elementNames } = useCourt();
   const { elements } = useAstrology();
   const { mbtiTypes } = useMbti();
   const [selectedKey, setSelectedKey] = useState(null);
@@ -117,7 +117,8 @@ export default function CourtPage() {
   const altDeck = deck === 'rws' ? 'thoth' : 'rws';
   const altRankName = rankNames[altDeck][cardData.rank];
   const altDeckLabel = deck === 'rws' ? 'Thoth' : 'RWS';
-  const elementalFormula = `${rankEl} of ${suitEl}`;
+  const of_ = t.courtPage?.of || 'of';
+  const elementalFormula = `${elementNames[rankEl]} ${of_} ${elementNames[suitEl]}`;
   const es = elementStyles[suitEl];
 
   return (
@@ -149,11 +150,11 @@ export default function CourtPage() {
                   <div className={`text-center mb-4 ${style.headerBg} -m-4 p-4 rounded-t-lg border-b ${style.borderColor}`}>
                     <h2 className={`text-xl font-bold ${style.textColor} flex items-center justify-center gap-2`}>
                       <span>{suitSymbols[suit]}</span>
-                      {suit}
+                      {suitNames[suit]}
                       <span>{style.icon}</span>
                     </h2>
                     <p className={`text-xs ${style.textColor} mt-1 opacity-70`}>
-                      {el} · {elements[el]?.description}
+                      {elementNames[el]} · {elements[el]?.description}
                     </p>
                   </div>
                   <div className="space-y-3 mt-6">
@@ -161,8 +162,9 @@ export default function CourtPage() {
                       const key = `${rank}-of-${suit.toLowerCase()}`;
                       const isSelected = selectedKey === key;
                       const cardMbti = courtCardData[key]?.mbti;
-                      const displayName = `${rankNames[deck][rank]} of ${suit}`;
-                      const subtext = `${rankElements[rank].toLowerCase()} of ${el.toLowerCase()}`;
+                      const of_ = t.courtPage?.of || 'of';
+                      const displayName = `${rankNames[deck][rank]} ${of_} ${suitNames[suit]}`;
+                      const subtext = `${elementNames[rankElements[rank]].toLowerCase()} ${of_} ${elementNames[el].toLowerCase()}`;
                       return (
                         <button
                           key={key}
@@ -215,10 +217,10 @@ export default function CourtPage() {
                   <div className="info-box rounded-xl p-6 text-left">
                     <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.names}</p>
                     <h3 className="text-2xl font-medium accent-text mt-2">
-                      {deckRankName} of {cardData.suit}
+                      {deckRankName} {of_} {suitNames[cardData.suit]}
                     </h3>
                     <p className="text-base mt-1 opacity-70">
-                      {altRankName} of {cardData.suit} <span className="text-sm opacity-60">({altDeckLabel})</span>
+                      {altRankName} {of_} {suitNames[cardData.suit]} <span className="text-sm opacity-60">({altDeckLabel})</span>
                     </p>
                     <p className="text-sm mt-2 opacity-60 italic">{cardData.title}</p>
                   </div>
@@ -226,7 +228,7 @@ export default function CourtPage() {
                   <div className="info-box rounded-xl p-6 text-left">
                     <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.elementalFormula}</p>
                     <p className="text-xl font-medium mt-1">{elementalFormula}</p>
-                    <p className="text-sm mt-1 opacity-60">{rankEl} rank · {suitEl} suit</p>
+                    <p className="text-sm mt-1 opacity-60">{elementNames[rankEl]} {t.labels?.rank?.toLowerCase()} · {elementNames[suitEl]} {t.labels?.suit?.toLowerCase()}</p>
                   </div>
 
                   <div className="info-box rounded-xl p-6 text-left">
@@ -271,7 +273,7 @@ export default function CourtPage() {
                     <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.suit}</p>
                     <p className="text-xl font-medium flex items-center gap-3 mt-1">
                       <span className="text-2xl">{suitSymbols[cardData.suit]}</span>
-                      {cardData.suit}
+                      {suitNames[cardData.suit]}
                     </p>
                     <p className="text-sm mt-2 opacity-80 leading-snug">
                       {elements[suitEl]?.description}
@@ -293,7 +295,7 @@ export default function CourtPage() {
                   <div className="info-box rounded-xl p-6">
                     <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.suitElement}</p>
                     <p className="text-xl font-medium mt-1">
-                      {elementStyles[suitEl].icon} {suitEl}
+                      {elementStyles[suitEl].icon} {elementNames[suitEl]}
                     </p>
                     <p className="text-sm mt-2 opacity-80 leading-snug">
                       {elements[suitEl]?.description}
@@ -303,7 +305,7 @@ export default function CourtPage() {
                   <div className="info-box rounded-xl p-6">
                     <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.rankElement}</p>
                     <p className="text-xl font-medium mt-1">
-                      {elementStyles[rankEl].icon} {rankEl}
+                      {elementStyles[rankEl].icon} {elementNames[rankEl]}
                     </p>
                     <p className="text-sm mt-2 opacity-80 leading-snug">
                       {elements[rankEl]?.description}
@@ -316,11 +318,15 @@ export default function CourtPage() {
                       {elementalFormula}
                     </p>
                     <p className="text-sm mt-3 opacity-80 leading-snug">
-                      As {rankEl} of {suitEl}, this figure embodies the {rankEl.toLowerCase()} quality applied to the {suitEl.toLowerCase()} realm —
-                      {rankEl === 'Fire' && ' the active, projective will driving the suit\'s force forward with authority and initiative.'}
-                      {rankEl === 'Water' && ' the receptive, feeling dimension giving the suit\'s force depth, empathy, and internal resonance.'}
-                      {rankEl === 'Air' && ' the thinking, communicative aspect carrying the suit\'s force outward through ideas and swift movement.'}
-                      {rankEl === 'Earth' && ' the grounding, material aspect holding the suit\'s force in latent potential, ready to be cultivated into form.'}
+                      {(t.courtPage?.elementOfElement || '')
+                        .replace('{rankEl}', elementNames[rankEl])
+                        .replace('{suitEl}', elementNames[suitEl])
+                        .replace('{rankElLower}', elementNames[rankEl].toLowerCase())
+                        .replace('{suitElLower}', elementNames[suitEl].toLowerCase())}
+                      {rankEl === 'Fire' && ` ${t.courtPage?.fireRankDescription || ''}`}
+                      {rankEl === 'Water' && ` ${t.courtPage?.waterRankDescription || ''}`}
+                      {rankEl === 'Air' && ` ${t.courtPage?.airRankDescription || ''}`}
+                      {rankEl === 'Earth' && ` ${t.courtPage?.earthRankDescription || ''}`}
                     </p>
                   </div>
 

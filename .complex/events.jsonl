@@ -83,3 +83,13 @@
 {"ts":"2026-03-07T21:46:53.846030350+00:00","action":"claim","node_id":"kTbp.QqhH","part":"claude"}
 {"ts":"2026-03-07T22:36:48.261129158+00:00","action":"integrate","node_id":"kTbp.QqhH","reason":"Added MBTI display to court card UI — useMbti hook, UI labels in both locales, info box with type/stack/bridge"}
 {"ts":"2026-03-07T22:36:53.313716564+00:00","action":"integrate","node_id":"kTbp","reason":"All subtasks complete — MBTI types added to court cards with data, translations, and UI"}
+{"ts":"2026-03-08T00:16:21.823441413+00:00","action":"create","node_id":"Jun8","detail":"Fix: Localize hardcoded English strings on court page"}
+{"ts":"2026-03-08T00:17:56.803826213+00:00","action":"create","node_id":"Jun8.j3cb","detail":"Add suitNames and elementNames translation maps to court data"}
+{"ts":"2026-03-08T00:18:14.162198414+00:00","action":"create","node_id":"Jun8.36lL","detail":"Replace all hardcoded English in court page.js with localized values"}
+{"ts":"2026-03-08T00:18:19.383658330+00:00","action":"surface","node_id":"Jun8.j3cb"}
+{"ts":"2026-03-08T00:18:24.098515866+00:00","action":"claim","node_id":"Jun8.j3cb","part":"claude"}
+{"ts":"2026-03-08T00:18:50.003446899+00:00","action":"integrate","node_id":"Jun8.j3cb","reason":"Added suitNames, elementNames maps to both locales and courtPage.of connector"}
+{"ts":"2026-03-08T00:18:50.004633136+00:00","action":"surface","node_id":"Jun8.36lL"}
+{"ts":"2026-03-08T00:18:55.427479229+00:00","action":"claim","node_id":"Jun8.36lL","part":"claude"}
+{"ts":"2026-03-08T00:20:24.523137769+00:00","action":"integrate","node_id":"Jun8.36lL","reason":"All hardcoded English replaced with localized values"}
+{"ts":"2026-03-08T00:20:24.524410822+00:00","action":"integrate","node_id":"Jun8","reason":"Court page fully localized — suit names, element names, connectors, elemental combination text"}

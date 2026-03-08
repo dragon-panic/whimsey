@@ -30,6 +30,20 @@ export const rankDescriptions = {
   page: 'The Earth aspect of the suit — grounded, studious, and potential-bearing. This figure holds the elemental force in latent form, representing learning, messages, and new beginnings.'
 };
 
+export const suitNames = {
+  Wands: 'Wands',
+  Cups: 'Cups',
+  Swords: 'Swords',
+  Pentacles: 'Pentacles'
+};
+
+export const elementNames = {
+  Fire: 'Fire',
+  Water: 'Water',
+  Air: 'Air',
+  Earth: 'Earth'
+};
+
 export const suitOrder = ['Wands', 'Cups', 'Swords', 'Pentacles'];
 export const rankOrder = ['king', 'queen', 'knight', 'page'];
 

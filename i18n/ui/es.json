@@ -56,6 +56,7 @@
   "courtPage": {
     "subtitle": "Cartas de la Corte",
     "description": "Las dieciséis cartas de la corte representan los aspectos elementales de cada palo encarnados en arquetipos humanos. Cada una es tanto Fuego, Agua, Aire o Tierra <em>de</em> su elemento de palo — una faceta específica de un todo elemental mayor.",
+    "of": "de",
     "rankSuit": "rango {rank} · palo {suit}",
     "elementOfElement": "Como {rankEl} de {suitEl}, esta figura encarna la cualidad de {rankElLower} aplicada al reino de {suitElLower} —",
     "fireRankDescription": "la voluntad activa y proyectiva que impulsa la fuerza del palo hacia adelante con autoridad e iniciativa.",

@@ -30,6 +30,20 @@ export const rankDescriptions = {
   page: 'El aspecto de Tierra del palo — enraizado, estudioso y portador de potencial. Esta figura contiene la fuerza elemental en forma latente, representando el aprendizaje, los mensajes y los nuevos comienzos.'
 };
 
+export const suitNames = {
+  Wands: 'Bastos',
+  Cups: 'Copas',
+  Swords: 'Espadas',
+  Pentacles: 'Oros'
+};
+
+export const elementNames = {
+  Fire: 'Fuego',
+  Water: 'Agua',
+  Air: 'Aire',
+  Earth: 'Tierra'
+};
+
 export const suitOrder = ['Wands', 'Cups', 'Swords', 'Pentacles'];
 export const rankOrder = ['king', 'queen', 'knight', 'page'];
 
