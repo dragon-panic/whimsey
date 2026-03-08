@@ -62,7 +62,8 @@ export const courtCardData = {
     traditional: 'El patriarca bendecido por el fuego divino — un líder que gobierna a través de la autoridad otorgada por Dios y la rectitud moral. Su llama es sagrada, su palabra es ley. Protege y provee, exigiendo lealtad y obediencia a cambio.',
     modern: 'El CEO o fundador visionario que revoluciona industrias a través del carisma y la tenacidad. Construye imperios por pura voluntad, inspira una lealtad feroz y no tolera nada que atenúe su impulso. El éxito valida el método.',
     postModern: 'Una crítica al mito del genio solitario — ¿la llama de quién proyecta sombras sobre quienes la alimentan? El fuego del rey consume recursos, relaciones y el trabajo de innumerables personas invisibles. El liderazgo debe ser cuestionado como una construcción social.',
-    metaModern: 'El líder consciente que empuña una visión ardiente mientras permanece responsable ante el ecosistema más amplio. Soberanía ganada a través de la integridad, no del dominio. La llama compartida en lugar de acaparada — iluminando en lugar de consumir.'
+    metaModern: 'El líder consciente que empuña una visión ardiente mientras permanece responsable ante el ecosistema más amplio. Soberanía ganada a través de la integridad, no del dominio. La llama compartida en lugar de acaparada — iluminando en lugar de consumir.',
+    reversed: 'Liderazgo tiránico o visión creativa convertida en dominación impulsada por el ego. El fuego interior consume en lugar de iluminar — ambición temeraria, temperamento explosivo, o un líder que exige lealtad sin ofrecer ninguna a cambio.'
   },
 
   'queen-of-wands': {
@@ -76,7 +77,8 @@ export const courtCardData = {
     traditional: 'La matriarca cuyo hogar arde con vida y propósito. Es el fuego del hogar — sustentadora de la familia, la comunidad y la tradición. Su pasión se expresa a través del servicio devoto a lo que ama.',
     modern: 'La emprendedora o artista fuerza de la naturaleza — segura, autopromocionada y magnéticamente productiva. Asume su ambición sin disculpas. Su producción creativa es prolífica, su red amplia, su marca personal impecable.',
     postModern: '¿Quién decide qué pasiones son legítimas? La confianza de la reina a menudo descansa sobre el privilegio social. Examinar qué significa ser "naturalmente" magnética cuando el magnetismo está moldeado por la política de raza, clase y género.',
-    metaModern: 'El yo creativo plenamente expresado que celebra las llamas de otros en lugar de competir con ellas. Confianza arraigada en un genuino autoconocimiento, magnetismo enraizado en la presencia auténtica. Fuego que calienta en lugar de consumir.'
+    metaModern: 'El yo creativo plenamente expresado que celebra las llamas de otros en lugar de competir con ellas. Confianza arraigada en un genuino autoconocimiento, magnetismo enraizado en la presencia auténtica. Fuego que calienta en lugar de consumir.',
+    reversed: 'La seguridad en sí misma cuajada en vanidad o celos. La presencia magnética se vuelve posesiva, exigiendo atención mientras sofoca la luz de otros. Alternativamente, un bloqueo creativo donde el fuego interior se ha enfriado y la confianza ha colapsado en inseguridad.'
   },
 
   'knight-of-wands': {
@@ -90,7 +92,8 @@ export const courtCardData = {
     traditional: 'El caballero cruzado que cabalga por una causa sagrada con fe absoluta y sin vacilación. Su valor es genuino aunque su sabiduría no esté desarrollada. Dios y la gloria apuntan en la misma dirección; no pide más.',
     modern: 'El emprendedor en serie, el creativo nómada, el disruptor que prospera en el caos. Lanza proyectos con energía brillante y presentaciones excepcionales, luego pierde interés una vez que la emoción inicial se desvanece. El fracaso y el éxito le aburren por igual.',
     postModern: 'El aventurero inquieto cuya libertad a menudo depende de que otros permanezcan quietos. ¿Quién limpia los fuegos que inicia? El nomadismo y la disrupción como privilegio — la capacidad de seguir adelante está desigualmente distribuida.',
-    metaModern: 'El iniciador inspirado que ha aprendido a pasar la antorcha a sustentadores hábiles antes de cabalgar hacia el próximo horizonte. Su fuego es un regalo, no una reclamación. Velocidad equilibrada con la sabiduría suficiente para saber cuándo desacelerar.'
+    metaModern: 'El iniciador inspirado que ha aprendido a pasar la antorcha a sustentadores hábiles antes de cabalgar hacia el próximo horizonte. Su fuego es un regalo, no una reclamación. Velocidad equilibrada con la sabiduría suficiente para saber cuándo desacelerar.',
+    reversed: 'Energía inquieta sin dirección — proyectos dispersos, promesas rotas y un rastro de asuntos sin terminar. El aventurero que confunde la temeridad con el coraje, dejando a otros limpiar los fuegos que inicia.'
   },
 
   'page-of-wands': {
@@ -104,7 +107,8 @@ export const courtCardData = {
     traditional: 'La joven acólita ante la llama sagrada, aprendiendo los rituales de la devoción y el servicio creativo. El entusiasmo disciplinado en práctica. La mente del principiante sostenida dentro de una estructura que le da dirección.',
     modern: 'La joven creativa, la pasante con grandes ideas, la estudiante que aún no ha aprendido a contenerse. Su energía es contagiosa y a veces agotadora. El sistema no siempre sabe qué hacer con ella.',
     postModern: 'La eterna principiante como respuesta a la cultura de la experticia — resistiendo la presión de convertirse en una autoridad. Negándose a ser domesticada. El paje que no se convertirá en caballero según el calendario de nadie más.',
-    metaModern: 'La mente del principiante preservada conscientemente y con intención. El entusiasmo fresco sostenido junto a la sabiduría creciente. Aprende el oficio mientras mantiene la llama viva — ni ingenua ni cínica, sino genuinamente encendida.'
+    metaModern: 'La mente del principiante preservada conscientemente y con intención. El entusiasmo fresco sostenido junto a la sabiduría creciente. Aprende el oficio mientras mantiene la llama viva — ni ingenua ni cínica, sino genuinamente encendida.',
+    reversed: 'Potencial creativo desperdiciado por falta de enfoque o perseverancia. Entusiasmo que se enciende y muere antes de construir nada. La chispa que no encuentra su leña — impaciencia, ingenuidad, o la negativa a comprometerse con la disciplina que haría real la visión.'
   },
 
   // ── CUPS (Water) ──────────────────────────────────────────────────────────
@@ -120,7 +124,8 @@ export const courtCardData = {
     traditional: 'El director espiritual, confesor o chamán cuya compasión es genuina pero cuyo rol está estrictamente definido por la tradición. Sana dentro de una estructura sagrada. La sabiduría se transmite, no se inventa. Los límites protegen tanto al que da como al que recibe.',
     modern: 'El terapeuta, el ejecutivo emocionalmente inteligente, el director creativo que lidera a través de la empatía en lugar de la jerarquía. Comprende lo que motiva a las personas y crea las condiciones para su mejor trabajo. Los sentimientos son datos.',
     postModern: '¿Las emociones de quién se permite dominar? La autoridad emocional serena del rey a menudo descansa sobre estructuras que suprimen ciertos sentimientos como caóticos o peligrosos. El trabajo emocional está desigualmente distribuido.',
-    metaModern: 'El líder emocional integrado que sostiene tanto la profundidad como la estabilidad — sin suprimir sentimientos ni ahogarse en ellos. Modela que la inteligencia emocional no se trata de control sino de presencia honesta y enraizada.'
+    metaModern: 'El líder emocional integrado que sostiene tanto la profundidad como la estabilidad — sin suprimir sentimientos ni ahogarse en ellos. Modela que la inteligencia emocional no se trata de control sino de presencia honesta y enraizada.',
+    reversed: 'Manipulación emocional disfrazada de empatía — el sanador que usa su comprensión de los sentimientos como palanca. Alternativamente, represión emocional tras una fachada serena, o un consejero ahogándose en las profundidades que dice haber dominado.'
   },
 
   'queen-of-cups': {
@@ -134,7 +139,8 @@ export const courtCardData = {
     traditional: 'La contemplativa, la mística, el vaso de compasión divina. Reza por el mundo desde un lugar de profunda quietud. Su profundidad es un don de Dios, para ser sostenido con humildad y ofrecido en servicio.',
     modern: 'La terapeuta altamente sintonizada, la artista que canaliza la verdad emocional colectiva, la madre que conoce la vida interior de sus hijos mejor que ellos mismos. La profundidad emocional como superpoder profesional y personal.',
     postModern: 'La carga de la sintonización emocional interminable — especialmente cuando recae en las mujeres por defecto. La reina que contiene los sentimientos de todos los demás a costa de los propios. ¿La copa de quién se está llenando?',
-    metaModern: 'Receptividad profunda emparejada con límites que honran al yo. La reina que es tanto profundamente abierta como claramente ella misma — presencia sin fusión, compasión sin autoanulación. La copa que también se vierte en sí misma.'
+    metaModern: 'Receptividad profunda emparejada con límites que honran al yo. La reina que es tanto profundamente abierta como claramente ella misma — presencia sin fusión, compasión sin autoanulación. La copa que también se vierte en sí misma.',
+    reversed: 'Empatía sin límites que disuelve el yo, o receptividad psíquica que se ha vuelto abrumadora e inmanejable. El espejo que ya no puede distinguir su propio reflejo del de los demás — codependencia, martirio emocional, o retiro a mundos interiores impenetrables.'
   },
 
   'knight-of-cups': {
@@ -148,7 +154,8 @@ export const courtCardData = {
     traditional: 'El caballero cortés que sirve a una dama o un ideal espiritual con devoción pura. El amor como voto sagrado. El amor cortés como una disciplina que eleva el alma. El sentimiento refinado a través del ritual y el sacrificio.',
     modern: 'El artista-amante sensible, el hombre que hace grandes gestos y desaparece cuando comienza el trabajo de sostener la intimidad. Inteligencia emocional sin madurez emocional. La musa en lugar del compañero.',
     postModern: 'El ideal romántico como construcción cultural que establece estándares imposibles y castiga lo mundano. ¿La versión del amor de quién se llama romántica? La tradición trovadoresca y sus dinámicas de poder de género.',
-    metaModern: 'El anhelo genuino del corazón por la trascendencia, sostenido dentro de la disposición a presentarse para lo ordinario. El romance integrado con el compromiso. El ideal y lo real sostenidos en una tensión productiva.'
+    metaModern: 'El anhelo genuino del corazón por la trascendencia, sostenido dentro de la disposición a presentarse para lo ordinario. El romance integrado con el compromiso. El ideal y lo real sostenidos en una tensión productiva.',
+    reversed: 'Idealismo romántico que no sobrevive el contacto con la realidad — el amante que se evapora cuando comienza el trabajo mundano de la relación. Promesas seductoras sin sustancia, indisponibilidad emocional enmascarada como sensibilidad, o la persecución de un ideal imposible que sabotea la conexión real.'
   },
 
   'page-of-cups': {
@@ -162,7 +169,8 @@ export const courtCardData = {
     traditional: 'La novicia en la vida emocional o espiritual, aprendiendo a cuidar las aguas interiores con gentileza y reverencia. El sentimiento como don sagrado que debe desarrollarse lenta y cuidadosamente.',
     modern: 'La persona altamente sensible descubriendo sus dones empáticos, la joven artista aprendiendo a confiar en su verdad emocional por encima de la validación externa. La vulnerabilidad como fuerza creativa.',
     postModern: 'La romantización de la inocencia infantil como solución a una cultura excesivamente racionalizada. ¿La sensibilidad de quién se valora como visionaria y la de quién se descarta como fragilidad?',
-    metaModern: 'El corazón abierto que ha aprendido discernimiento sin perder el asombro. Receptividad emocional emparejada con el primer crecimiento de límites saludables — aún escuchando al pez en la copa, pero comenzando a entender qué significa el mensaje.'
+    metaModern: 'El corazón abierto que ha aprendido discernimiento sin perder el asombro. Receptividad emocional emparejada con el primer crecimiento de límites saludables — aún escuchando al pez en la copa, pero comenzando a entender qué significa el mensaje.',
+    reversed: 'Inmadurez emocional o hipersensibilidad que no puede canalizarse productivamente. El niño soñador que se niega a crecer, refugiándose en la fantasía en lugar de comprometerse con el sentimiento. Intuición bloqueada, estancamiento creativo, o vulnerabilidad explotada por quienes deberían protegerla.'
   },
 
   // ── SWORDS (Air) ──────────────────────────────────────────────────────────
@@ -178,7 +186,8 @@ export const courtCardData = {
     traditional: 'El legislador, el magistrado, el sacerdote-erudito cuya palabra lleva el peso de la tradición acumulada y el estudio cuidadoso. La razón al servicio del orden divino. La letra de la ley como marco moral.',
     modern: 'El cirujano, el abogado, el pensador de sistemas — alguien cuyo valor reside en la precisión de su análisis y su inmunidad al sesgo cognitivo. La objetividad como virtud profesional. La autoridad del experto.',
     postModern: '¿La razón de quién cuenta como universal? La espada del análisis "objetivo" ha cortado históricamente en direcciones muy particulares. Exponer la carga ideológica contenida en las afirmaciones de racionalidad pura.',
-    metaModern: 'Inteligencia clara al servicio de la comprensión genuina — razón que incluye en lugar de excluir, precisión que ilumina en lugar de disminuir. La espada empuñada con cuidado por lo que corta.'
+    metaModern: 'Inteligencia clara al servicio de la comprensión genuina — razón que incluye en lugar de excluir, precisión que ilumina en lugar de disminuir. La espada empuñada con cuidado por lo que corta.',
+    reversed: 'Tiranía intelectual — una mente brillante que usa la precisión como arma, derribando a otros bajo el pretexto de objetividad. Racionalidad fría divorciada de la empatía, abuso de autoridad, o un juicio tan severo que destruye lo que dice servir.'
   },
 
   'queen-of-swords': {
@@ -192,7 +201,8 @@ export const courtCardData = {
     traditional: 'La mujer erudita cuyo duelo ha refinado su fe y cuya inteligencia aguda sirve a una verdad superior. La mujer sabia cuyo consejo se busca precisamente porque no siente nada por tu ego.',
     modern: 'La analista o editora brillante que exige claridad y no tolera deshonestidad intelectual. Ha visto a través de cada racionalización y espera que tú hayas hecho lo mismo. Estándares sin sentimentalismo.',
     postModern: 'La mujer que tuvo que desarrollar armadura intelectual para ser tomada en serio en estructuras no construidas para ella. El costo de reclamar claridad en un mundo que patologiza igualmente a las mujeres emocionales y a las mujeres frías.',
-    metaModern: 'Claridad y compasión sostenidas juntas sin pretender que ninguna sea fácil. La reina que puede decir la verdad difícil y permanecer abierta al dolor del otro. La honestidad como un acto de cuidado.'
+    metaModern: 'Claridad y compasión sostenidas juntas sin pretender que ninguna sea fácil. La reina que puede decir la verdad difícil y permanecer abierta al dolor del otro. La honestidad como un acto de cuidado.',
+    reversed: 'Claridad endurecida en amargura, o un duelo que se ha convertido en escudo permanente contra el sentimiento. La mente perceptiva vuelta cruel — usando la perspicacia para herir en lugar de iluminar. Aislamiento emocional justificado como independencia, o estándares tan imposiblemente altos que nadie puede alcanzarla.'
   },
 
   'knight-of-swords': {
@@ -206,7 +216,8 @@ export const courtCardData = {
     traditional: 'El cruzado, el reformador, el monje con espada — una fe tan absoluta que se convierte en arma. La integridad aterradora de alguien que se ha entregado enteramente a una causa más grande que él mismo.',
     modern: 'El periodista de investigación, el intelectual contrario, el activista radical — alguien que persigue la verdad a un costo personal y espera lo mismo de todos a su alrededor. El debate como obligación moral.',
     postModern: 'La violencia de la certeza. ¿Las verdades de quién pueden moverse a toda velocidad y cuáles deben probarse a cada paso? La carga del caballero deja tras de sí un paisaje de argumentos desmantelados, algunos de los cuales eran estructurales.',
-    metaModern: 'La mente aguda que ha aprendido a apuntar antes de cargar. Búsqueda de la verdad con humildad epistémica — dispuesto a equivocarse, dispuesto a desacelerar, dispuesto a considerar si la batalla vale el campo de batalla.'
+    metaModern: 'La mente aguda que ha aprendido a apuntar antes de cargar. Búsqueda de la verdad con humildad epistémica — dispuesto a equivocarse, dispuesto a desacelerar, dispuesto a considerar si la batalla vale el campo de batalla.',
+    reversed: 'Agresión intelectual sin templar por la sabiduría — el fanático que destruye relaciones y comunidades al servicio de principios abstractos. Argumentos temerarios, honestidad hiriente sin cuidado, o una mente moviéndose tan rápido que no reconoce el daño a su paso.'
   },
 
   'page-of-swords': {
@@ -220,7 +231,8 @@ export const courtCardData = {
     traditional: 'La estudiante diligente preparándose para el examen, la joven soldado montando guardia — disciplina antes que autoridad, aprendiendo las reglas antes de cuestionarlas.',
     modern: 'La pasante con un bloc de notas, la investigadora de posgrado, la analista junior — aguda, ávida, ligeramente abrumadora en su minuciosidad. Aún no ha aprendido a ser estratégica con sus observaciones.',
     postModern: 'La denunciante en formación. La que está en la institución que nota lo que todos los demás han acordado no ver. ¿La vigilancia de quién es paranoia y la de quién está justificada?',
-    metaModern: 'La mente curiosa que ha aprendido a hacer preguntas desde el asombro genuino en lugar del estado de alerta defensiva. La inteligencia como un don ofrecido en lugar de un escudo levantado. Observando el mundo con apertura en lugar de suspicacia.'
+    metaModern: 'La mente curiosa que ha aprendido a hacer preguntas desde el asombro genuino en lugar del estado de alerta defensiva. La inteligencia como un don ofrecido en lugar de un escudo levantado. Observando el mundo con apertura en lugar de suspicacia.',
+    reversed: 'Vigilancia cuajada en paranoia, o curiosidad intelectual convertida en arma como chisme y vigilancia. El espía que no confía en nadie, el estudiante que cuestiona todo pero no se compromete con nada, o una mente tan ocupada reuniendo información que nunca actúa sobre lo que sabe.'
   },
 
   // ── PENTACLES (Earth) ─────────────────────────────────────────────────────
@@ -236,7 +248,8 @@ export const courtCardData = {
     traditional: 'El mayordomo de la abundancia de Dios, responsable de quienes trabajan en su tierra. La riqueza sostenida en custodia, no como logro personal sino como obligación sagrada. La generosidad como el uso apropiado de los bienes mundanos.',
     modern: 'El magnate hecho a sí mismo que construyó un imperio a través del esfuerzo persistente y metódico. No necesita impresionar a nadie — los resultados hablan. Pensamiento a largo plazo, capital paciente, rendimientos compuestos en cada inversión, incluidas las relaciones.',
     postModern: '¿El trabajo de quién construye la abundancia del rey? El patriarca terrateniente como figura sostenida por el trabajo invisible. Examinar qué significa "construir algo" cuando los cimientos descansan sobre trabajo no remunerado o mal pagado.',
-    metaModern: 'Prosperidad enraizada en contribución genuina y distribuida equitativamente. El rey-mayordomo que sabe que su abundancia es relacional — sostenida por la salud de todos en el ecosistema, no extraída de él.'
+    metaModern: 'Prosperidad enraizada en contribución genuina y distribuida equitativamente. El rey-mayordomo que sabe que su abundancia es relacional — sostenida por la salud de todos en el ecosistema, no extraída de él.',
+    reversed: 'Éxito material corrompido en acaparamiento y explotación. El patriarca que controla a través de la riqueza, el avaro que teme la escasez a pesar de la abundancia, o competencia práctica desplegada sin fundamento ético. Obstinación disfrazada de estabilidad.'
   },
 
   'queen-of-pentacles': {
@@ -250,7 +263,8 @@ export const courtCardData = {
     traditional: 'La madre y ama de casa ideal, cuyo dominio es el espacio sagrado del hogar. Su labor es invisible porque lo es todo. Construye el mundo desde adentro hacia afuera, una comida, un hogar, un cuerpo cuidado a la vez.',
     modern: 'La brillante economista doméstica, la inversora ética, la mujer que construye riqueza silenciosa a través de la atención al detalle y el juego a largo plazo. No busca visibilidad pero su competencia es innegable.',
     postModern: 'Lo doméstico como político — ¿el "don natural" de quién para nutrir se convierte en la infraestructura de otro? La abundancia de la reina está construida sobre un trabajo que el mundo prefiere llamar instinto.',
-    metaModern: 'El cuerpo y la tierra sostenidos como sagrados — no al servicio de la productividad sino como valor intrínseco. Nutrir desde una plenitud genuina. La reina que se cuida a sí misma con tanto esmero como cuida su reino.'
+    metaModern: 'El cuerpo y la tierra sostenidos como sagrados — no al servicio de la productividad sino como valor intrínseco. Nutrir desde una plenitud genuina. La reina que se cuida a sí misma con tanto esmero como cuida su reino.',
+    reversed: 'Nutrición que sofoca, o competencia doméstica convertida en control posesivo. La madre tierra que da sin cesar pero exige dependencia total a cambio. Alternativamente, autonegligencia — tan enfocada en cuidar a otros que su propio terreno queda baldío.'
   },
 
   'knight-of-pentacles': {
@@ -264,7 +278,8 @@ export const courtCardData = {
     traditional: 'El agricultor yeoman, el artesano del gremio — alguien para quien el trabajo es vocación y la calidad es un estándar moral. Hay dignidad en el trabajo honesto. El trabajo es su propia recompensa.',
     modern: 'El gestor de proyectos, el ingeniero de DevOps, el experto en fiabilidad — la persona que hace que todo lo demás funcione prestando atención a las cosas de las que nadie más quiere ocuparse. Sin glamour e indispensable.',
     postModern: 'El trabajador constante como figura a menudo borrada de las narrativas que celebran la disrupción y la innovación. ¿La fiabilidad de quién sostiene la libertad de quién para ser creativo? La resistencia como fenómeno de clase.',
-    metaModern: 'Dedicación sin rigidez — trabajo paciente sostenido dentro de la conciencia de que la tierra misma cambia. El caballero que cuida el suelo mientras permanece dispuesto a cambiar de cultivo cuando la estación lo exige.'
+    metaModern: 'Dedicación sin rigidez — trabajo paciente sostenido dentro de la conciencia de que la tierra misma cambia. El caballero que cuida el suelo mientras permanece dispuesto a cambiar de cultivo cuando la estación lo exige.',
+    reversed: 'Paciencia calcificada en estancamiento — el trabajador fiable que ha dejado de crecer, el artesano cuya minuciosidad se ha convertido en excusa para nunca terminar. Resistencia al cambio necesario, perfeccionismo como parálisis, o resistencia sin propósito.'
   },
 
   'page-of-pentacles': {
@@ -278,7 +293,8 @@ export const courtCardData = {
     traditional: 'La aprendiz que se somete a la enseñanza del maestro, la novicia ante el oficio. Humildad ante el conocimiento. El aprendizaje como obligación sagrada. El largo camino de la habilidad genuina.',
     modern: 'La pasante que realmente quiere aprender el negocio desde cero, la estudiante universitaria de primera generación gestionando un presupuesto por primera vez. La emoción y el terror de la competencia material emergente.',
     postModern: 'La estudiante cuyo acceso al oficio y al aprendizaje está circunscrito por los recursos disponibles para ella. ¿La dedicación de quién se transforma en habilidad profesional y la de quién permanece como aficionada?',
-    metaModern: 'La principiante que se acerca a la realidad material con reverencia y curiosidad — comprendiendo que la competencia debe cultivarse, no arrebatarse. La tierra estudiada con la paciencia de quien sabe que la cosecha llegará.'
+    metaModern: 'La principiante que se acerca a la realidad material con reverencia y curiosidad — comprendiendo que la competencia debe cultivarse, no arrebatarse. La tierra estudiada con la paciencia de quien sabe que la cosecha llegará.',
+    reversed: 'La estudiante que no se compromete con el aprendizaje, o potencial material desperdiciado por pereza, distracción o prioridades mal ubicadas. Una preocupación por el dinero o la seguridad que desplaza la curiosidad genuina. La aprendiz que quiere maestría sin la paciencia del oficio.'
   }
 
 };

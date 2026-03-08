@@ -62,7 +62,8 @@ export const courtCardData = {
     traditional: 'The patriarch blessed by divine fire — a leader who rules through God-given authority and moral rectitude. His flame is sacred, his word law. He protects and provides, demanding loyalty and obedience in return.',
     modern: 'The visionary CEO or founder who disrupts industries through charisma and tenacity. He builds empires through sheer will, inspires fierce loyalty, and tolerates nothing that dims his momentum. Success validates the method.',
     postModern: 'A critique of the lone genius myth — whose flame casts shadows on those who fuel it? The king\'s fire consumes resources, relationships, and the labour of countless unseen others. Leadership must be questioned as a social construction.',
-    metaModern: 'The conscious leader who wields fiery vision while remaining accountable to the larger ecosystem. Sovereignty earned through integrity, not dominion. The flame shared rather than hoarded — illuminating rather than consuming.'
+    metaModern: 'The conscious leader who wields fiery vision while remaining accountable to the larger ecosystem. Sovereignty earned through integrity, not dominion. The flame shared rather than hoarded — illuminating rather than consuming.',
+    reversed: 'Tyrannical leadership or creative vision turned to ego-driven domination. The inner fire consumes rather than illuminates — reckless ambition, explosive temper, or a leader who demands loyalty while offering none in return.'
   },
 
   'queen-of-wands': {
@@ -76,7 +77,8 @@ export const courtCardData = {
     traditional: 'The matriarch whose household blazes with life and purpose. She is the hearth fire — sustainer of family, community, and tradition. Her passion is expressed through devoted service to what she loves.',
     modern: 'The force-of-nature entrepreneur or artist — confident, self-promoting, and magnetically productive. She owns her ambition unapologetically. Her creative output is prolific, her network wide, her personal brand impeccable.',
     postModern: 'Who decides which passions are legitimate? The queen\'s confidence often rests on social privilege. Examining what it means to be "naturally" magnetic when magnetism is shaped by race, class, and gender politics.',
-    metaModern: 'The fully expressed creative self who celebrates others\' flames rather than competing with them. Confidence grounded in genuine self-knowledge, magnetism rooted in authentic presence. Fire that warms rather than consumes.'
+    metaModern: 'The fully expressed creative self who celebrates others\' flames rather than competing with them. Confidence grounded in genuine self-knowledge, magnetism rooted in authentic presence. Fire that warms rather than consumes.',
+    reversed: 'Self-assurance curdled into vanity or jealousy. The magnetic presence becomes possessive, demanding attention while stifling others\' light. Alternatively, a creative block where the inner fire has gone cold and confidence has collapsed into self-doubt.'
   },
 
   'knight-of-wands': {
@@ -90,7 +92,8 @@ export const courtCardData = {
     traditional: 'The crusading knight who rides for a sacred cause with absolute faith and no hesitation. His valor is genuine even if his wisdom is undeveloped. God and glory point the same direction; he asks no more.',
     modern: 'The serial entrepreneur, the nomadic creative, the disruptor who thrives in chaos. He launches projects with brilliant energy and exceptional pitch decks, then loses interest once the initial excitement fades. Failure and success both bore him equally.',
     postModern: 'The restless adventurer whose freedom is often predicated on others holding still. Who cleans up the fires he starts? Nomadism and disruption as privilege — the ability to move on is unevenly distributed.',
-    metaModern: 'The inspired initiator who has learned to hand the torch to skilled sustainers before riding to the next horizon. His fire is a gift, not a claim. Speed balanced with enough wisdom to know when to slow down.'
+    metaModern: 'The inspired initiator who has learned to hand the torch to skilled sustainers before riding to the next horizon. His fire is a gift, not a claim. Speed balanced with enough wisdom to know when to slow down.',
+    reversed: 'Restless energy without direction — scattered projects, broken promises, and a trail of unfinished business. The adventurer who confuses recklessness with courage, leaving others to clean up the fires he starts.'
   },
 
   'page-of-wands': {
@@ -104,7 +107,8 @@ export const courtCardData = {
     traditional: 'The young acolyte before the sacred flame, learning the rituals of devotion and creative service. Enthusiasm disciplined into practice. The beginner\'s mind held within a structure that gives it direction.',
     modern: 'The junior creative, the intern with big ideas, the student who hasn\'t learned to hold back yet. Her energy is infectious and sometimes exhausting. The system doesn\'t always know what to do with her.',
     postModern: 'The perpetual beginner as a response to expertise culture — resisting the pressure to become an authority. Refusing to be domesticated. The page who will not become a knight on anyone else\'s timeline.',
-    metaModern: 'The beginner\'s mind preserved consciously and with intention. Fresh enthusiasm held alongside growing wisdom. She learns the craft while keeping the flame alive — neither naive nor cynical, but genuinely alight.'
+    metaModern: 'The beginner\'s mind preserved consciously and with intention. Fresh enthusiasm held alongside growing wisdom. She learns the craft while keeping the flame alive — neither naive nor cynical, but genuinely alight.',
+    reversed: 'Creative potential squandered through lack of focus or follow-through. Enthusiasm that flares and dies before anything is built. The spark that cannot find its kindling — impatience, naivety, or a refusal to commit to the discipline that would make the vision real.'
   },
 
   // ── CUPS (Water) ──────────────────────────────────────────────────────────
@@ -120,7 +124,8 @@ export const courtCardData = {
     traditional: 'The spiritual director, confessor, or shaman whose compassion is genuine but whose role is strictly defined by tradition. He heals within a sacred structure. Wisdom is passed down, not invented. Boundaries protect both giver and receiver.',
     modern: 'The therapist, the emotionally intelligent executive, the creative director who leads through empathy rather than hierarchy. He understands what motivates people and creates conditions for their best work. Feelings are data.',
     postModern: 'Whose emotions are permitted to be mastered? The calm emotional authority of the king often rests on structures that suppress certain feelings as chaotic or dangerous. Emotional labour is unevenly distributed.',
-    metaModern: 'The integrated emotional leader who holds both depth and stability — neither suppressing feelings nor drowning in them. He models that emotional intelligence is not about control but about honest, grounded presence.'
+    metaModern: 'The integrated emotional leader who holds both depth and stability — neither suppressing feelings nor drowning in them. He models that emotional intelligence is not about control but about honest, grounded presence.',
+    reversed: 'Emotional manipulation disguised as empathy — the healer who uses his understanding of feelings as leverage. Alternatively, emotional repression behind a calm facade, or a counsellor drowning in the depths he claims to have mastered.'
   },
 
   'queen-of-cups': {
@@ -134,7 +139,8 @@ export const courtCardData = {
     traditional: 'The contemplative, the mystic, the vessel of divine compassion. She prays for the world from a place of profound stillness. Her depth is a gift from God, to be held in humility and offered in service.',
     modern: 'The highly attuned therapist, the artist who channels collective emotional truth, the mother who knows her children\'s inner lives better than they do. Emotional depth as professional and personal superpower.',
     postModern: 'The burden of endless emotional attunement — especially when it falls to women by default. The queen who contains everyone else\'s feelings at the cost of her own. Whose cup is being filled?',
-    metaModern: 'Profound receptivity paired with self-honouring boundaries. The queen who is both deeply open and clearly herself — presence without merger, compassion without self-erasure. The cup that also pours into itself.'
+    metaModern: 'Profound receptivity paired with self-honouring boundaries. The queen who is both deeply open and clearly herself — presence without merger, compassion without self-erasure. The cup that also pours into itself.',
+    reversed: 'Boundaryless empathy that dissolves the self, or psychic receptivity that has become overwhelming and unmanageable. The mirror that can no longer distinguish its own reflection from others\' — codependency, emotional martyrdom, or retreat into impenetrable inner worlds.'
   },
 
   'knight-of-cups': {
@@ -148,7 +154,8 @@ export const courtCardData = {
     traditional: 'The chivalric knight who serves a lady or a spiritual ideal with pure devotion. Love as sacred vow. Courtly love as a discipline that elevates the soul. Feeling refined through ritual and sacrifice.',
     modern: 'The sensitive artist-lover, the man who makes grand gestures and disappears when the work of sustaining intimacy begins. Emotional intelligence without emotional maturity. The muse rather than the partner.',
     postModern: 'The romantic ideal as a cultural construct that sets impossible standards and punishes the mundane. Whose version of love gets to be called romantic? The troubadour tradition and its gendered power dynamics.',
-    metaModern: 'The heart\'s genuine longing for transcendence, held within the willingness to show up for the ordinary. Romance integrated with commitment. The ideal and the real held in productive tension.'
+    metaModern: 'The heart\'s genuine longing for transcendence, held within the willingness to show up for the ordinary. Romance integrated with commitment. The ideal and the real held in productive tension.',
+    reversed: 'Romantic idealism that cannot survive contact with reality — the lover who evaporates when the mundane work of relationship begins. Seductive promises without substance, emotional unavailability masked as sensitivity, or chasing an impossible ideal that sabotages real connection.'
   },
 
   'page-of-cups': {
@@ -162,7 +169,8 @@ export const courtCardData = {
     traditional: 'The novice in the emotional or spiritual life, learning to tend the inner waters with gentleness and reverence. Feeling as a sacred gift to be developed slowly and carefully.',
     modern: 'The highly sensitive person discovering their empathic gifts, the young artist learning to trust their emotional truth over external validation. Vulnerability as creative strength.',
     postModern: 'The romanticisation of childlike innocence as a solution to over-rationalised culture. Whose sensitivity is valued as visionary and whose is dismissed as fragility?',
-    metaModern: 'The open heart that has learned discernment without losing wonder. Emotional receptivity paired with the first growth of healthy boundaries — still listening for the fish in the cup, but beginning to understand what the message means.'
+    metaModern: 'The open heart that has learned discernment without losing wonder. Emotional receptivity paired with the first growth of healthy boundaries — still listening for the fish in the cup, but beginning to understand what the message means.',
+    reversed: 'Emotional immaturity or hypersensitivity that cannot be channelled productively. The dreaming child who refuses to grow, retreating into fantasy rather than engaging with feeling. Blocked intuition, creative stagnation, or vulnerability exploited by those who should protect it.'
   },
 
   // ── SWORDS (Air) ──────────────────────────────────────────────────────────
@@ -178,7 +186,8 @@ export const courtCardData = {
     traditional: 'The lawgiver, the magistrate, the scholar-priest whose word carries the weight of accumulated tradition and careful study. Reason in service of divine order. The letter of the law as a moral framework.',
     modern: 'The surgeon, the barrister, the systems thinker — someone whose value lies in the precision of their analysis and their immunity to cognitive bias. Objectivity as professional virtue. The expert\'s authority.',
     postModern: 'Whose reason counts as universal? The sword of "objective" analysis has historically cut in very particular directions. Exposing the ideological freight carried in claims to pure rationality.',
-    metaModern: 'Clear intelligence in service of genuine understanding — reason that includes rather than excludes, precision that illuminates rather than diminishes. The sword wielded with care for what it cuts.'
+    metaModern: 'Clear intelligence in service of genuine understanding — reason that includes rather than excludes, precision that illuminates rather than diminishes. The sword wielded with care for what it cuts.',
+    reversed: 'Intellectual tyranny — a brilliant mind that uses precision as a weapon, cutting others down under the guise of objectivity. Cold rationality divorced from empathy, abuse of authority, or judgement so harsh it destroys what it claims to serve.'
   },
 
   'queen-of-swords': {
@@ -192,7 +201,8 @@ export const courtCardData = {
     traditional: 'The learned woman whose grief has refined her faith and whose sharp intelligence serves a higher truth. The wise woman whose advice is sought precisely because she feels nothing for your ego.',
     modern: 'The brilliant analyst or editor who demands clarity and tolerates no intellectual dishonesty. She has seen through every rationalisation and expects you to have done the same. Standards without sentimentality.',
     postModern: 'The woman who had to develop intellectual armour to be taken seriously in structures not built for her. The cost of claiming clarity in a world that pathologises emotional women and cold women equally.',
-    metaModern: 'Clarity and compassion held together without pretending either is easy. The queen who can say the hard true thing and remain open to the other\'s pain. Honesty as an act of care.'
+    metaModern: 'Clarity and compassion held together without pretending either is easy. The queen who can say the hard true thing and remain open to the other\'s pain. Honesty as an act of care.',
+    reversed: 'Clarity hardened into bitterness, or grief that has become a permanent shield against feeling. The perceptive mind turned cruel — using insight to wound rather than illuminate. Emotional isolation justified as independence, or standards so impossibly high that no one can reach her.'
   },
 
   'knight-of-swords': {
@@ -206,7 +216,8 @@ export const courtCardData = {
     traditional: 'The crusader, the reformer, the monk with a sword — faith so absolute it becomes a weapon. The terrifying integrity of someone who has surrendered entirely to a cause larger than themselves.',
     modern: 'The investigative journalist, the contrarian intellectual, the radical activist — someone who pursues truth at personal cost and expects the same from everyone around them. Debate as a moral obligation.',
     postModern: 'The violence of certainty. Whose truths get to move at full speed and whose are required to prove themselves at every step? The knight\'s charge leaves behind a landscape of dismantled arguments, some of which were load-bearing.',
-    metaModern: 'The sharp mind that has learned to aim before charging. Truth-seeking with epistemic humility — willing to be wrong, willing to slow down, willing to consider whether the battle is worth the battlefield.'
+    metaModern: 'The sharp mind that has learned to aim before charging. Truth-seeking with epistemic humility — willing to be wrong, willing to slow down, willing to consider whether the battle is worth the battlefield.',
+    reversed: 'Intellectual aggression untempered by wisdom — the fanatic who destroys relationships and communities in service of abstract principle. Reckless arguments, hurtful honesty delivered without care, or a mind moving so fast it cannot recognise the damage in its wake.'
   },
 
   'page-of-swords': {
@@ -220,7 +231,8 @@ export const courtCardData = {
     traditional: 'The diligent student preparing for examination, the young soldier standing watch — discipline before authority, learning the rules before questioning them.',
     modern: 'The intern with a notepad, the graduate researcher, the junior analyst — sharp, eager, slightly overwhelming in their thoroughness. Has not yet learned to be strategic with their observations.',
     postModern: 'The whistleblower in the making. The one in the institution who notices what everyone else has agreed not to see. Whose vigilance is paranoia and whose is justified?',
-    metaModern: 'The curious mind that has learned to ask questions from genuine wonder rather than defensive alert. Intelligence as a gift offered rather than a shield raised. Watching the world with openness rather than suspicion.'
+    metaModern: 'The curious mind that has learned to ask questions from genuine wonder rather than defensive alert. Intelligence as a gift offered rather than a shield raised. Watching the world with openness rather than suspicion.',
+    reversed: 'Vigilance curdled into paranoia, or intellectual curiosity weaponised as gossip and surveillance. The spy who trusts no one, the student who questions everything but commits to nothing, or a mind so busy gathering information it never acts on what it knows.'
   },
 
   // ── PENTACLES (Earth) ─────────────────────────────────────────────────────
@@ -236,7 +248,8 @@ export const courtCardData = {
     traditional: 'The steward of God\'s abundance, responsible for those who labour on his land. Wealth held in trust, not as personal achievement but as sacred obligation. Generosity as the proper use of worldly goods.',
     modern: 'The self-made mogul who built an empire through persistent, methodical effort. He doesn\'t need to impress anyone — the results speak. Long-term thinking, patient capital, compound returns on every investment including relationships.',
     postModern: 'Whose labour builds the king\'s abundance? The landed patriarch as a figure sustained by invisible toil. Examining what it means to "build something" when the foundations rest on unpaid or underpaid work.',
-    metaModern: 'Prosperity rooted in genuine contribution and equitably distributed. The steward-king who knows his abundance is relational — sustained by the health of everyone in the ecosystem, not extracted from it.'
+    metaModern: 'Prosperity rooted in genuine contribution and equitably distributed. The steward-king who knows his abundance is relational — sustained by the health of everyone in the ecosystem, not extracted from it.',
+    reversed: 'Material success corrupted into hoarding and exploitation. The patriarch who controls through wealth, the miser who fears scarcity despite abundance, or practical competence deployed without ethical grounding. Stubbornness disguised as stability.'
   },
 
   'queen-of-pentacles': {
@@ -250,7 +263,8 @@ export const courtCardData = {
     traditional: 'The ideal mother and householder, whose domain is the sacred space of the home. Her labour is invisible because it is everything. She builds the world from the inside out, one meal, one hearth, one tended body at a time.',
     modern: 'The brilliant domestic economist, the ethical investor, the woman who builds quiet wealth through attention to detail and the long game. She does not seek visibility but her competence is undeniable.',
     postModern: 'The domestic as political — whose "natural" gift for nurturing becomes someone else\'s infrastructure? The queen\'s abundance is built on labour that the world prefers to call instinct.',
-    metaModern: 'The body and earth held as sacred — not in the service of productivity but as intrinsic value. Nurturing from genuine fullness. The queen who tends herself as carefully as she tends her realm.'
+    metaModern: 'The body and earth held as sacred — not in the service of productivity but as intrinsic value. Nurturing from genuine fullness. The queen who tends herself as carefully as she tends her realm.',
+    reversed: 'Nurturing that smothers, or domestic competence that has become possessive control. The earth mother who gives endlessly but demands total dependence in return. Alternatively, self-neglect — so focused on tending others that her own ground goes barren.'
   },
 
   'knight-of-pentacles': {
@@ -264,7 +278,8 @@ export const courtCardData = {
     traditional: 'The yeoman farmer, the guild craftsman — someone for whom work is vocation and quality is a moral standard. There is dignity in honest labour. The work is its own reward.',
     modern: 'The project manager, the DevOps engineer, the reliability expert — the person who makes everything else work by paying attention to the things no one else wants to care about. Unglamorous and indispensable.',
     postModern: 'The steady worker as a figure often erased from narratives that celebrate disruption and innovation. Whose reliability sustains whose freedom to be creative? Endurance as a class phenomenon.',
-    metaModern: 'Dedication without rigidity — patient work held within awareness that the land itself changes. The knight who tends the soil while remaining willing to change crops when the season demands it.'
+    metaModern: 'Dedication without rigidity — patient work held within awareness that the land itself changes. The knight who tends the soil while remaining willing to change crops when the season demands it.',
+    reversed: 'Patience calcified into stagnation — the reliable worker who has stopped growing, the craftsman whose thoroughness has become an excuse to never finish. Resistance to necessary change, perfectionism as paralysis, or dull endurance without purpose.'
   },
 
   'page-of-pentacles': {
@@ -278,7 +293,8 @@ export const courtCardData = {
     traditional: 'The apprentice who submits to the master\'s teaching, the novice before the craft. Humility before knowledge. Learning as a sacred obligation. The long path of genuine skill.',
     modern: 'The intern who actually wants to learn the business from the ground up, the first-generation college student managing a budget for the first time. The excitement and terror of material competence emerging.',
     postModern: 'The student whose access to craft and learning is circumscribed by the resources available to them. Whose dedication gets transformed into professional skill and whose remains amateur?',
-    metaModern: 'The beginner who approaches material reality with reverence and curiosity — understanding that competence must be grown, not seized. Earth studied with the patience of someone who knows the harvest will come.'
+    metaModern: 'The beginner who approaches material reality with reverence and curiosity — understanding that competence must be grown, not seized. Earth studied with the patience of someone who knows the harvest will come.',
+    reversed: 'The student who will not commit to the learning, or material potential squandered through laziness, distraction, or misplaced priorities. A preoccupation with money or security that crowds out genuine curiosity. The apprentice who wants mastery without the patience of craft.'
   }
 
 };

@@ -93,3 +93,21 @@
 {"ts":"2026-03-08T00:18:55.427479229+00:00","action":"claim","node_id":"Jun8.36lL","part":"claude"}
 {"ts":"2026-03-08T00:20:24.523137769+00:00","action":"integrate","node_id":"Jun8.36lL","reason":"All hardcoded English replaced with localized values"}
 {"ts":"2026-03-08T00:20:24.524410822+00:00","action":"integrate","node_id":"Jun8","reason":"Court page fully localized — suit names, element names, connectors, elemental combination text"}
+{"ts":"2026-03-08T02:13:58.033540380+00:00","action":"create","node_id":"3OIR","detail":"Feature: Add reversed (Rx) meanings for all cards"}
+{"ts":"2026-03-08T02:28:36.214616670+00:00","action":"create","node_id":"3OIR.ib35","detail":"Add reversed descriptions for 16 court cards (EN)"}
+{"ts":"2026-03-08T02:28:36.216277132+00:00","action":"create","node_id":"3OIR.2cV5","detail":"Add reversed descriptions for 36 pip cards (EN)"}
+{"ts":"2026-03-08T02:28:36.217934704+00:00","action":"create","node_id":"3OIR.dVab","detail":"Add Spanish translations for all 52 reversed descriptions"}
+{"ts":"2026-03-08T02:28:36.219627704+00:00","action":"create","node_id":"3OIR.DutM","detail":"Display reversed meanings in court page and decan page UI"}
+{"ts":"2026-03-08T02:28:42.121085008+00:00","action":"surface","node_id":"3OIR.ib35"}
+{"ts":"2026-03-08T02:28:42.121132947+00:00","action":"surface","node_id":"3OIR.2cV5"}
+{"ts":"2026-03-08T02:28:46.828821+00:00","action":"claim","node_id":"3OIR.ib35","part":"claude"}
+{"ts":"2026-03-08T02:28:46.830347616+00:00","action":"claim","node_id":"3OIR.2cV5","part":"claude"}
+{"ts":"2026-03-08T02:31:15.414368890+00:00","action":"integrate","node_id":"3OIR.ib35","reason":"Added reversed field to all 16 court cards"}
+{"ts":"2026-03-08T02:31:15.415677213+00:00","action":"integrate","node_id":"3OIR.2cV5","reason":"Added reversed field to all 36 pip cards"}
+{"ts":"2026-03-08T02:31:15.416787275+00:00","action":"surface","node_id":"3OIR.dVab"}
+{"ts":"2026-03-08T02:31:22.172651759+00:00","action":"claim","node_id":"3OIR.dVab","part":"claude"}
+{"ts":"2026-03-08T02:34:13.243496445+00:00","action":"integrate","node_id":"3OIR.dVab","reason":"All 52 reversed descriptions translated to Spanish (16 court + 36 pip)"}
+{"ts":"2026-03-08T02:34:13.244708332+00:00","action":"surface","node_id":"3OIR.DutM"}
+{"ts":"2026-03-08T02:34:13.246270837+00:00","action":"claim","node_id":"3OIR.DutM","part":"claude"}
+{"ts":"2026-03-08T02:35:27.178824710+00:00","action":"integrate","node_id":"3OIR.DutM","reason":"Rx meaning displayed on both decan and court pages, labels in both locales"}
+{"ts":"2026-03-08T02:35:27.180230111+00:00","action":"integrate","node_id":"3OIR","reason":"All 52 reversed descriptions added with Spanish translations and UI display"}

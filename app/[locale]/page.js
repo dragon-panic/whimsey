@@ -260,6 +260,15 @@ export default function Home() {
                     </p>
                   </div>
 
+                  {cardTitles[selectedDecan.card].reversed && (
+                    <div className="info-box rounded-xl p-6 text-left">
+                      <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.reversedMeaning}</p>
+                      <p className="text-sm mt-2 opacity-80 leading-snug italic">
+                        {cardTitles[selectedDecan.card].reversed}
+                      </p>
+                    </div>
+                  )}
+
                   <div className="info-box rounded-xl p-6 text-left">
                     <p className="text-sm uppercase tracking-wider opacity-70">{t.labels?.jungianInterpretation}</p>
                     <p className="text-sm mt-2 opacity-80 leading-snug">
