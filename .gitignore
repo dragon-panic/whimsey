@@ -1,3 +1,5 @@
-node_modules
-.next
-out
+.complex/cx.lock
+.complex/*.bak
+.next/
+node_modules/
+out/
